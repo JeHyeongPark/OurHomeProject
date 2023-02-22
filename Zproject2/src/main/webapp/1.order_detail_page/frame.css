@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+
+.header {
+	width: 68%;
+	margin-left: 430px;
+}
+
+.main {
+	width: 65%;
+	margin-left: 430px;
+}
+		
+.sidebar {
+	text-align: center;
+	width: 350px;
+	background-color: #f4efe1;
+	position: fixed;
+	height: 100%;
+	z-index:20;
+	/*border: 1px solid */
+}
+		
+.footer {
+	background-color: #f4efe1;
+	text-align:center;
+}
+
+.all{
+	width:100%;
+	width:100%;
+	overflow: hidden;
+}
+
+.title{
+	width: 99%;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #444444;
+    border: 1px solid #e9e9e9;
+    padding-left: 10px;
+    margin: 30px 0px 30px 0px;
+}
+
+.small img{border:none;margin:10px;width:60px;height:60px;}
+	
+.large{border:none;width:450px;height:450px;}
+
+.ul{
+	list-style : none; /* 아무 표시 없음 */
+}
+
+.delivery{
+	list-style:none;
+	
+}
+
+.guide{
+	margin-top:100px;
+}
+
+.button wish{
+	margin-left:10px;
+}
+
+
+	
+	
