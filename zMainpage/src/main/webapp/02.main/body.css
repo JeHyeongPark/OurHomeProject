@@ -1,0 +1,144 @@
+/*전체범위설정 footer내릴려고*/
+.html, body {
+    height: 100%  
+}
+
+/*1.사이드바*/
+.sidebar {
+	width: 310px;
+	background-color: #f4efe1;
+	position: fixed;
+	left:0;
+	top:0;
+	padding:30px;
+	box-sizing:border-box;
+	letter-spacing:0.5px;
+	
+	height: 100%;
+	z-index:100;	
+	float:left;	
+}
+
+/* 2.큰틀 조정부분
+		container 젤큰전체테두리
+		conent-제품있는곳전체
+		conent_slider-슬라이더이미지부분
+		conent_list-제품목록부분
+		list_imgs-제품목록에 이미지들
+*/
+
+/* asdf에 #contents*/
+  #container{
+    margin-left:310px;
+  	min-height: 100%;
+  	
+    padding-left:5%;
+	padding-right:5%;
+	
+  	/*적용하면 슬라이드부분이 내려감
+  	padding-left:5%;
+	padding-right:5%;
+	padding-top:5%*/
+  }
+  
+  .conent {	
+	width:100%; 
+	height: 100%;
+	/*margin-left:310px;
+	   border:1px solid;*/
+	   
+}
+ .conent_slider {
+	margin:0px auto;	
+	background-color: #f4efe1;
+	/* 
+	border:1px solid;
+	padding-left:370px;
+	height: 30%;
+	width:100%;  */
+}
+
+/* asdf에 .main*/
+ .conent_list {
+	/*border:1px solid;
+	padding-left:370px;
+	min-height: 100%; min-height: calc(100vh - 100px);*/
+	margin:0px auto;	
+	width:100%; 	
+	background-color: #feeee1;
+	padding-top:10%;	
+	
+}
+
+
+
+/*3.슬라이더부분 이미지 사이즈*/
+
+.slider{
+	 width:100%;
+	 height:100%;
+}
+
+/*4.제품목록 이미지색변화*/
+.warp{
+	position: relative;
+	display: black;
+  	transition: .5s ease;  
+ 	list-style-type: none;
+	background-color:#90827a ;
+
+}
+.warp:hover .text{
+  opacity: 1.0;
+}
+.warp:hover .img{
+  opacity: 0.5;
+}
+
+/*참고사이트
+글씨를 정가운데로 
+https://www.codingfactory.net/10907
+
+conent_list =>제품목록 전체 
+list_imgs =>테이블 이름
+warp->이미지별 묶음
+text=> 텍스트설명
+img=> 이미지들
+
+opacity: 0;-> 안보이게 가리는거
+transition: .5s ease;  ->보이는 속도조절
+*/
+
+/*글씨 위치조정 */
+.text{
+	position: absolute;
+	padding: 5px 10px;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	opacity: 0;
+	transition: .5s ease;  
+	color:#ffffff;
+	z-index:50;
+}
+
+
+
+
+/* 5.하단부분 */
+footer {
+    bottom: 0;	
+    padding-top:3%;
+}
+.footer {		
+	background-color: #f4efe1;
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+	/*padding-left:310px;
+	margin: 0 auto; 
+	position: absolute;
+	*/
+	
+}
