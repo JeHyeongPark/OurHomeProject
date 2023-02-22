@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="id_find.js?ver=1"></script>
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/id_find.css" rel="stylesheet">
+
+<title>::아이디 찾기::</title>
+<style>
+#leftbar{
+	width:310px;
+	position:fixed;
+	left:0;
+	top:0;
+	padding:30px;
+	box-sizing:border-box;
+	z-index:98;
+	letter-spacing:0.5px;
+	background-color:beige;
+	height:100%;
+}
+
+#contents{
+    padding:0% 5% 30% 5%;
+    margin-left:310px;
+}
+
+.footer {
+	margin-left:310px;
+	background-color: #f4efe1;
+}
+</style>
+<script>
+$(function(){
+  $('#email_sel').change(function(){
+	$("#email_sel option:selected").each(function(){
+	  if($(this).val()=='1'){
+		 $('#email2').val('');
+	     $('#email2').attr("disabled",false); //#email2 활성화
+	  }else{
+		 $('#email2').val($(this).text()); //선택값 입력
+		 $('#email2').attr("disabled",true); //#email2 비활성화
+	  }
+	})
+  })
+ })
+ /* 여기부터 기능 구현 시 수정 예정
+  $(function(){
+    $('#phbtn').click(function(){
+	  alert('전화번호로 찾기 준비 중');
+    })
+  }) */
+  $(function(){
+    $('#embtn').click(function(){
+	  alert('이메일로 찾기 준비 중');
+    })
+  }) 
+  /* 여기까지 기능 구현 시 수정예정 */
+  
+</script>
+</head>
+<body>
+ <div id="leftbar">
+  <div class=""><a href="#">쇼핑몰</a></div>
+ </div>  
+ <div id="contents"> <!-- 사이드 제외 전체구역 -->
+  <div class="main">  
+   <div class="top">
+     <img src="./icon/find_id.png" width="50px"> 
+     <div id="id_find"><font size="4"><b>아이디 찾기</b></font><br>
+            아이디를 찾기 위한 방법을 선택해 주세요. <p>
+     </div>
+    <hr>
+   </div>
+      
+   <div id="middle" align="center">
+     <form method="post" id="idfm" action="#">
+       <table id="findtb">
+         <tr align="left" height="40">
+           <td colspan="3" id="find" valign="middle">
+             <input type="radio" name="find"> <b>전화번호로 찾기</b>
+           </td>
+         </tr>
+         <tr height="20">
+           <td id="id1">이름</td>
+           <td width="160"><input type="text" name="mem_name" id="mem_name" size="21px"></td>
+           <td width="100"><button id="phbtn">인증하기</button></td>
+         </tr>
+           <span class="check" id="check"></span><br>
+         <tr height="40">
+           <td id="id1">휴대전화</td>
+           <td colspan="2" width="160"><input type="text" name="mem_phone" id="mem_phone"size="21px"></td>
+         </tr>
+       </table>
+       <!-- 이메일로 찾기-->
+       <table id="findtb2">
+         <tr align="left" height="40">
+           <td colspan="3" id="find" valign="middle">
+             <input type="radio" name="mem_email"> <b>이메일로 찾기</b>
+           </td>
+         </tr>
+         <tr height="20">
+           <td id="id1">이름</td>
+           <td width="160"><input type="text" name="mem_name" id="mem_name2"size="21px"></td>
+           <td width="100"><button id="embtn">인증하기</button></td>
+         </tr>
+         <tr height="40">
+           <td id="id1">이메일</td>
+           <td colspan="2">
+             <input type="text" name="mem_email" id="mem_email"size="13"> @
+             <input type="text" name="mem_email2" id="email2" size="13">
+             <select name="mem_email_sel" id="email_sel">
+               <option value="" selected>선택하세요</option>
+               <option value="1">직접 입력</option>
+               <option value="daum.net">daum.net</option>
+               <option value="google.com">google.com</option>
+               <option value="naver.com">naver.com</option>
+               <option value="nate.com">nate.com</option>
+               <option value="empas.com">empas.com</option>
+             </select>
+           </td>
+         </tr>
+       </table>
+     </form>
+   </div><!-- middle -->
+  </div> <!-- 메인 -->
+
+  <!-- footer -->
+  <footer class="container-fluid navbar-fixed-bottom">
+	<div class="footer">footer구역</div>
+  </footer>
+ </div><!-- content -->   
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

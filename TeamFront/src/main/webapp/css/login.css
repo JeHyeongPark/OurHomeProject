@@ -1,0 +1,28 @@
+
+table{
+	border: 2px gray solid;
+	border-radius:10px;
+	width:500px;
+	height:300px
+}
+#logfm{
+	margin-top:70px;	
+}
+#mem_id, 
+#mem_pwd{
+    margin-right:20px;
+    padding-left:20px;
+}    
+#logbtn{
+        width:90px;
+        height:58px;
+        background-color:black;
+        color:white;
+        border-radius:5px;
+        cursor:pointer
+}
+a {
+   text-decoration:none;
+   font-size: 1.1em;
+   color:rgb(68, 68, 68);
+  }			

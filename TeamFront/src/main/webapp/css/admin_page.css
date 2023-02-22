@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.top{
+	margin-top:30px;
+}
+table{
+	margin-top:40px;
+	width:100%;	
+}
+tr,th,td{
+	border:1px solid black;
+}
+th {
+	align:center;
+}
+
+.selected{
+	background-color:#eeeeee
+}
+#search{
+	float:right;
+	margin-top:40px;
+}

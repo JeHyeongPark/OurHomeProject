@@ -1,0 +1,35 @@
+
+table{
+    width:500px;
+	height:200px;
+	border: 2px gray solid;
+	border-radius:10px;
+}	
+#pwupfm{
+    margin-top:70px;
+}
+img{
+	float:left;
+	margin-right:10px;
+}
+#pwd_upda {
+	margin-top:30px;
+}
+#pwdbtn{
+	width:90px;
+	height:30px;
+	margin-right:30px;
+	background:gray;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+#pwch{
+	padding-left:30px;
+	height:30px;
+}
+#pwd{
+	padding-left:40px;
+	width:200px;
+	height:20px;
+}

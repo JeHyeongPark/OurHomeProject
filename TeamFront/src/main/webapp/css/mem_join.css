@@ -1,0 +1,30 @@
+
+#mem_join{
+	margin-top:30px;
+}
+img{
+	float:left;
+	margin-right:10px;
+}
+table {
+	width:800px;
+	border: 2px solid gray;
+	margin-top:70px;
+}
+tr,td {
+	height:40px;
+	border: 2px solid gray;
+	padding-left:10px;
+}
+button{
+	margin-left:10px;
+}
+#join_end{
+	float:left;
+	margin-top:20px;
+	margin-left:130px;
+}
+#close{
+	position:relative;
+	margin-top:20px;
+}

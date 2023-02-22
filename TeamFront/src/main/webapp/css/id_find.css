@@ -1,0 +1,41 @@
+
+img{
+	float:left;
+	margin-right:10px;
+}
+#id_find {
+	margin-top:30px;
+}
+#idfm{
+    margin-top:70px;
+}
+#findtb,
+#findtb2 {
+	width:600px;
+	height:210px;
+	padding-bottom:40px;
+	border:1px solid black;
+	border-radius:10px;
+}
+#findtb2 {
+	position:relative;
+    margin-top:30px;
+}
+#find {
+	padding-left:40px;
+	font-size:14pt;
+}
+#id1{
+    padding-left:100px;
+    width:140px;
+}
+#phbtn,
+#embtn{
+	width:90px;
+	height:30px;
+	margin-right:30px;
+	background:gray;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}

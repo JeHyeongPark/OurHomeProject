@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<title>08.inputattr.html</title>
+<script>
+$(function(){
+  //입력양식에 관한 필터 속성 선택자 : 요소[속성명=값] => 요소:속성명
+  /*
+    요소:button - input 태그중에서 type속성이 button인 경우
+	            비활성화(disabled) true <-->활성화(enabled)->true
+	요소:reset - 초기화 
+	요소:submit - 전송
+	요소:text - type속성이 text인 경우
+	요소:checkbox,->checked - false(체크하지 마라) / true(체크표시)
+	요소:file - 파일첨부
+	요소:image
+	요소:password
+	요소:radio
+  */
+  //$('input[type=text]').val('값을 입력하세요.');
+  $('input:text').val('값을 입력하세요.');
+  //input태그 중에서 password 속성을 찾아 css를 적용하고 '값 입력'
+  $('input:password').css('background','pink').val('값 입력');
+  //추가
+  $('input:button').val('필터속성'); //input 태그로 시작 -> 입력 양식태그로 인식 -> val()이용
+  $('input:disabled').attr('disabled',false); //비활성화
+  $('input:checkbox').attr('checked',false); //체크해제
+  
+  console.log('출력할 때 사용하는 내장객체'); //디버깅 - System.out.ptintln(출력할 값)
+})
+</script>
+</head>
+<body>
+  <h1>jQuery 필터 선택자 예제</h1>
+  <input type="text">
+  <input type="password">
+  <input type="button">
+  <button>버튼2</button>
+  <hr>
+  <input type="checkbox" name="city" value="서울" checked> 서울
+  <input type="button" value="확인" disabled>
+</body>
+</html>
