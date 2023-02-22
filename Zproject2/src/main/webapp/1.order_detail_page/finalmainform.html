@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+<title>부트스트랩 예제</title>
+
+<!-- 부트스트랩 -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<style>
+.header {
+	width: 68%;
+	margin-left: 430px;
+}
+
+.main {
+	width: 68%;
+	margin-left: 430px;
+}
+
+.footer {
+	background-color: #f4efe1;
+	text-align:center;
+	margin-left: 350px;
+}
+
+.sidebar {
+	text-align: center;
+	width: 350px;
+	background-color: #f4efe1;
+	position: fixed;
+	height: 100%;
+}
+</style>
+<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="row">
+	<div class="sidebar">
+		사이드바
+		<!-- 사이드바 -->
+		<ul class="nav">
+			<li>회원가입</li>
+			<li>회원로그인</li>
+			<li>게시판</li>
+			<li>설문조사</li>
+		</ul>
+	</div>
+	
+	<div class="main">     
+			<table class="table">
+		        <thead>
+		          <tr>
+		            <td class="text-center">번호</td><td class="text-center">제목</td><td class="text-right">작성일자</td><td class="text-left">작성자</td>
+		          </tr>
+		        </thead>
+		        <tbody>
+		           <tr>
+		            <td class="text-center">1</td><td class="text-center">게시판의 글제목1</td><td class="text-right">홍길동</td><td>홍길동</td>
+		          </tr>
+		          <tr>
+		            <td class="text-center">2</td><td class="text-center">게시판의 글제목2</td><td class="text-right">테스트</td><td>홍길동</td>
+		          </tr>
+		          <tr>
+		            <td class="text-center">3</td><td class="text-center">게시판의 글제목3</td><td class="text-right">임시3</td><td>홍길동</td>
+		          </tr>
+		         </tbody>
+     		 </table><!-- 메인 -->
+		
+	    	</div><!-- main -->
+
+
+
+	<footer class="container-fluid navbar-fixed-bottom">
+		<div class="footer">footer구역</div>
+	</footer>
+
+
+
+
+
+	<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+	<script src="../js/bootstrap.min.js"></script>
+ </div>	
+</body>
+</html>
