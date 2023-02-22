@@ -1,0 +1,96 @@
+#leftbar {
+	width: 310px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 30px;
+	box-sizing: border-box;
+	z-index: 98;
+	letter-spacing: 0.5px;
+	background-color: beige;
+	height: 100%;
+}
+#contents {
+	padding:4% 5% 30% 5%;
+   margin-left:310px;
+}
+/* .footer {
+	text-align: center;
+	background-color: #f4efe1;
+} */
+.header {
+	width: 50%;
+	text-align: center;
+}
+img {
+	width: 100%;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+.img {
+	display: block;
+	position: relative;
+	width: 120px;
+	height: 120px;
+}
+.theView{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	background: rgba(17,17,17,0.65);
+    box-sizing: border-box;
+	
+}
+
+ul {
+	list-style: none;
+	display: block;
+	overflow: hidden;
+}
+
+ul>li {
+	display: inline-block;
+	overflow: hidden;
+}
+.starR {
+	background:
+		url('http://miuu227.godohosting.com/images/icon/ico_review.png')
+		no-repeat right 0;
+	background-size: auto 100%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+/* 별점 css */
+.starR.on {
+	background-position: 0 0;
+}
+
+/* 5.하단부분 */
+footer {
+    bottom: 0;
+}
+.footer {      
+   background-color: #f4efe1;
+   text-align:center;
+   width:100%;
+   /*padding-left:310px;
+   margin: 0 auto; 
+   position: absolute;
+   */
+}
+
+/*전체범위설정 footer내릴려고*/
+html, body {
+    height: 100%;
+     font-family:'S-CoreDream-3Light';
+}
+
+/* @font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+} */
