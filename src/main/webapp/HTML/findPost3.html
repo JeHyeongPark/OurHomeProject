@@ -48,6 +48,26 @@ body{
 }
 
 
+#cancelPost_leftbar{
+	width:310px;
+	position:fixed;
+	padding:30px;
+	box-sizing:border-box;
+	background-color:beige;
+	height:100%;
+}
+
+#postView_leftbar{
+	width:310px;
+	position:fixed;
+	padding:30px;
+	box-sizing:border-box;
+	background-color:beige;
+	height:100%;
+}
+
+
+
 #faqPost_contents{
 	padding:4% 5% 30% 5%;
 	margin-left:310px;
@@ -65,6 +85,17 @@ body{
 	margin-left:310px;
 }
 
+#cancelPost_contents{
+	padding:4% 5% 30% 5%;
+	margin-left:310px;
+}
+
+#postView_contents{
+	padding:4% 5% 30% 5%;
+	margin-left:310px;
+}
+
+
 
 
 .faqPost_main{
@@ -79,6 +110,12 @@ body{
 
 
 .findPost_main{
+  padding-top:5%;
+
+}
+
+
+.cancelPost_main{
   padding-top:5%;
 
 }
@@ -106,6 +143,16 @@ body{
     padding-top:3%;
 }
 
+.cancelPost_footer {
+    bottom: 0;	
+    padding-top:3%;
+}
+
+.postView_footer {
+    bottom: 0;	
+    padding-top:3%;
+}
+
 .faqPost_footerdiv {		
 	background-color: #f4efe1;
 	text-align:center;
@@ -128,6 +175,21 @@ body{
 }
 
 
+.cancelPost_footerdiv {		
+	background-color: #f4efe1;
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+}
+
+.postView_footerdiv {		
+	background-color: #f4efe1;
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+}
+
+
 .faqPost_paging{
 	margin-left:44%;
 }
@@ -137,6 +199,10 @@ body{
 }
 
 .findPost_paging{
+	margin-left:44%;
+}
+
+.cancelPost_paging{
 	margin-left:44%;
 }
 
@@ -161,10 +227,20 @@ body{
 	letter-spacing:10px;
 }
 
+.cancelPost_paging li{
+	list-style:none;
+	float:left;
+	letter-spacing:10px;
+}
+
+
 .faqPost_write{
 	float:right;
 }
 
+.cancelPost_write{
+	float:right;
+}
 
 .faqPost_bottomsearch{
 	float:right;
@@ -181,27 +257,33 @@ body{
 	margin-top:5%;
 }	
 
-.posttable{
+
+.cancelPost_bottomsearch{
+	float:right;
+	margin-top:5%;
+}	
+
+.postView_posttable{
 	width:100%;
 	border:1px solid rgb(192, 192, 192);
 	border-left:0;
 	border-right:0;
 }
 
-.movetable{
+.postView_movetable{
 	width:100%;
 	border:1px solid rgb(192, 192, 192);
 	border-left:0;
 	border-right:0;
 }
-.posttable th, .posttable td {
+.postView_posttable th, .postView_posttable td {
   border:1px solid rgb(192, 192, 192);
   padding:10px;
   	border-left:0;
 	border-right:0;
 }
 
-.movetable th, .movetable td{
+.postView_movetable th, .postView_movetable td{
   border:1px solid rgb(192, 192, 192);
   padding:10px;
   	border-left:0;
@@ -209,26 +291,26 @@ body{
  
 }
 
-.posttable td{
+.postView_posttable td{
   width:90%;
 }
 
-.movetable td{
+.postView_movetable td{
   width:90%;
 }
 
-.buttonarea{
+.postView_buttonarea{
 margin-bottom:5%
 }
 
 
-.buttonarea button{
+.postView_buttonarea button{
 	float:right;
 	margin-right:0.5%
 }
 
 
-.movetablearea{
+.postView_movetablearea{
 margin-top:10%;
 }
 
