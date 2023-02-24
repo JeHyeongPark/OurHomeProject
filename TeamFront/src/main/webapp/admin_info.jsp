@@ -4,15 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="join.js?ver=1"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/asj.css" rel="stylesheet">
-
-<title>::회원정보 수정::</title>
+<meta charset="UTF-8">
+<title>::회원정보 관리::</title>
 <script>
 $(function(){
   $('#email_sel').change(function(){
@@ -39,13 +36,13 @@ $(function(){
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">
     <div class="top">
-      <img src="./icon/mem_join.png" id="mem_info_img" width="50px">
-      <div id="mem_info"><font size="4"><b>회원정보</b></font><br><p></div>
+      <img src="./icon/mem_join.png" id="admin_info_img" width="50px">
+      <div id="admin_info"><font size="4"><b>회원정보 관리</b></font><br><p></div>
         <hr>
     </div>
     
     <div class="middle">
-     <table id="mem_info_tb" align="center" border="2px solid gray">
+     <table id="admin_info_tb" align="center" border="2px solid gray">
       <tr>
         <td width="120px">이름</td>
         <td><input type="text" name="mem_name" disabled></td>
@@ -56,22 +53,17 @@ $(function(){
       </tr>
       <tr>
         <td width="120px">비밀번호</td>
-        <td><input type="password" name="mem_pwd"></td>
-      </tr>
-      <tr>
-        <td width="120px">비밀번호 확인</td>
-        <td><span class="pwu_pop" title="※ 비밀번호 입력 조건 
-  - 영소문자 / 숫자 / 특수기호 3가지 포함 8자~16자
-  - 입력가능 특수문자 [ ~, !, @, #, $, ^, -, _ ] 
-  - 공백 입력 불가능">
-        <input type="password" name="mem_pwd2"></span></td>
+        <!-- 초기화 버튼 클릭 시 자동으로 임의의 비밀번호 부여 -->
+        <td><input type="password" name="mem_pwd" disabled>
+  	        <a href="#"><button id="pwd_reset">초기화</button></a>
+        </td>
       </tr>
       <tr id="addr">
         <td width="120px">주소</td>
         <td><input type="text" name="mem_zipcode">
             <button id="zipbtn">우편번호 검색</button><p><p>
             <input type="text" name="mem_addr1">  
-            <input type="text" name="mem_addr2" width="70px" placeholder="추가 주소를 입력하세요">
+            <input type="text" name="mem_addr2" width="40px" placeholder="추가 주소를 입력하세요">
         </td>
       </tr>
       <tr>
@@ -95,9 +87,8 @@ $(function(){
       </tr>
      </table>
      <div>  
-       <button id="update" onclick="update()">수정 완료</button>
-       <a href="login.jsp"><button id="close">취소</button></a>
-       <button id="delete_mem" onclick="delpop()">회원 탈퇴하기</button>
+       <button id="close" onclick="histroy.back()">취소</button>
+       <button id="delete_mem" onclick="admin_delpop()">탈퇴 처리하기</button>
      </div>
     </div><!-- middle -->
   </div><!-- main -->

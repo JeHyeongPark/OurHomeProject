@@ -7,8 +7,7 @@
 <script type="text/javascript" src="join.js?ver=1"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link href="./css/bootstrap.min.css" rel="stylesheet">
-<link href="./css/main.css" rel="stylesheet">
-<link href="./css/id_find.css" rel="stylesheet">
+<link href="./css/asj.css" rel="stylesheet">
 <script>
 $(function(){
   $('#email_sel').change(function(){
@@ -23,12 +22,12 @@ $(function(){
 	})
   })
  })
- /* 여기부터 기능 구현 시 수정 예정
+ /* 여기부터 기능 구현 시 수정 예정*/
   $(function(){
     $('#phbtn').click(function(){
 	  alert('전화번호로 찾기 준비 중');
     })
-  }) */
+  })
   $(function(){
     $('#embtn').click(function(){
 	  alert('이메일로 찾기 준비 중');
@@ -45,42 +44,42 @@ $(function(){
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">  
    <div class="top">
-     <img src="./icon/find_id.png" width="50px"> 
+     <img src="./icon/find_id.png" id="id_find_img" width="50px"> 
      <div id="id_find"><font size="4"><b>아이디 찾기</b></font><br>
             아이디를 찾기 위한 방법을 선택해 주세요. <p>
      </div>
     <hr>
    </div>
       
-   <div id="middle" align="center">
+   <div class="middle" align="center">
      <form method="post" id="idfm" action="#">
        <table id="findtb">
          <tr align="left" height="40">
-           <td colspan="3" id="find" valign="middle">
+           <td colspan="3" id="find_phone_td" valign="middle">
              <input type="radio" name="find"> <b>전화번호로 찾기</b>
            </td>
          </tr>
          <tr height="20">
            <td id="id1">이름</td>
-           <td width="160"><input type="text" name="mem_name" id="mem_name" size="21px"></td>
+           <td width="160"><input type="text" name="mem_name" size="21px"></td>
            <td width="100"><button id="phbtn">인증하기</button></td>
          </tr>
-           <span class="check" id="check"></span><br>
          <tr height="40">
            <td id="id1">휴대전화</td>
-           <td colspan="2" width="160"><input type="text" name="mem_phone" id="mem_phone"size="21px"></td>
+           <td colspan="2" width="160"><input type="text" name="mem_phone" size="21px"></td>
          </tr>
        </table>
+       
        <!-- 이메일로 찾기-->
        <table id="findtb2">
          <tr align="left" height="40">
-           <td colspan="3" id="find" valign="middle">
-             <input type="radio" name="mem_email"> <b>이메일로 찾기</b>
+           <td colspan="3" id="find_email_td" valign="middle">
+             <input type="radio" name="find"> <b>이메일로 찾기</b>
            </td>
          </tr>
          <tr height="20">
            <td id="id1">이름</td>
-           <td width="160"><input type="text" name="mem_name" id="mem_name2"size="21px"></td>
+           <td width="160"><input type="text" name="mem_name" size="21px"></td>
            <td width="100"><button id="embtn">인증하기</button></td>
          </tr>
          <tr height="40">

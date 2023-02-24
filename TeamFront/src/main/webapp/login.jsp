@@ -3,27 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="login.js?ver=1"></script>
-<link href="./css/bootstrap.min.css" rel="stylesheet">
-<link href="./css/main.css" rel="stylesheet">
-<link href="./css/login.css" rel="stylesheet">
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/asj.css" rel="stylesheet">
+
 <title>::로그인::</title>
 <style>
 
-#log_id input{
-	background-image:url("./icon/id.png");
-	background-position:1px center;
-	background-size:16px;
-	background-repeat:no-repeat;
-}
-#log_pwd input{
-	background-image:url("./icon/pwd.png");
-	background-position: 1px center;
-	background-size:16px;
-	background-repeat:no-repeat
-}
 </style>
 </head>
 <body>
@@ -35,14 +24,14 @@
  <div id="contents">  <!-- 전체 레이아웃을 감싸기 -->
   <div class="main"> 
     <form method="post" id="logfm" action="#">      
-  	  <table id="log_tb" align="center">       
+  	  <table id="login_tb" align="center">       
        <tr>
         <td colspan="2" align="center" height="180px">
-         <img src="./icon/login.png" width="70px" vspace="10"><p><font size="4"><b>로그인</b></font>
+         <img src="./icon/login.png" width="70px" vspace="10"><p>
+         <font size="4"><b>로그인</b></font>
         </td>
        </tr>  
        <tr id="log_id"> <!-- 아이디 -->
-        <span class="check" id="check"></span><br>
         <td height="35px" width="300px" align="right">
          <input type="text" id="mem_id" name="mem_id" placeholder="아이디">
         </td>
@@ -57,9 +46,9 @@
        </tr>
        <tr id="find" >
         <td colspan="2" align="center" height="50px">
-         <a href="id_find.html">아이디 찾기</a>&nbsp;&nbsp;|&nbsp;
-         <a href="pwd_find.html">비밀번호 찾기</a>&nbsp;&nbsp;|&nbsp;
-         <a href="mem_join.html">회원가입 </a>
+         <a id="login_a" href="id_find.jsp">아이디 찾기</a>&nbsp;&nbsp;|&nbsp;
+         <a id="login_a" href="pwd_find.jsp">비밀번호 찾기</a>&nbsp;&nbsp;|&nbsp;
+         <a id="login_a" href="mem_join.jsp">회원가입 </a>
         <td>
        </tr>
    	  </table>

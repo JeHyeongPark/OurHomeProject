@@ -1,0 +1,347 @@
+@charset "UTF-8";
+@charset "UTF-8";
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+body{
+ 	font-family:'S-CoreDream-3Light';
+}
+html, body {
+    height: 100%
+}
+
+#leftbar{
+	width:310px;
+	position:fixed;
+	left:0;
+	top:0;
+	padding:30px;
+	box-sizing:border-box;
+	z-index:98;
+	letter-spacing:0.5px;
+	background-color:beige;
+	height:100%;
+}
+
+#contents{
+   padding:0% 5% 30% 5%;
+   margin-left:310px;
+}
+
+.footer {      
+	bottom: 0;
+   padding-top:3%;
+   background-color: #f4efe1;
+   text-align:center;
+   width:100%;
+   margin-top:auto;
+   /*padding-left:310px;
+   position: absolute;
+   */
+}
+
+/*login*/
+#login_tb{
+	border: 2px gray solid;
+	border-radius:10px;
+	width:500px;
+	height:300px
+}
+
+#logfm{
+	margin-top:70px;	
+}
+
+#log_id input{
+	background-image:url("./icon/id.png");
+	background-position:1px center;
+	background-size:16px;
+	background-repeat:no-repeat;
+}
+#log_pwd input{
+	background-image:url("./icon/pwd.png");
+	background-position: 1px center;
+	background-size:16px;
+	background-repeat:no-repeat
+}
+#mem_id, 
+#mem_pwd{
+    margin-right:20px;
+    padding-left:20px;
+}    
+#logbtn{
+        width:90px;
+        height:58px;
+        background-color:black;
+        color:white;
+        border-radius:5px;
+        cursor:pointer
+}
+.login_a {
+   text-decoration:none;
+   font-size: 1.1em;
+   color:rgb(68, 68, 68);
+  }		
+  
+/*id_find*/
+#id_find_img{
+	float:left;
+	margin-right:10px;
+}
+#id_find_td {
+	margin-top:30px;
+}
+#idfm{
+    margin-top:70px;
+}
+#findtb,
+#findtb2 {
+	width:600px;
+	height:210px;
+	padding-bottom:40px;
+	border:1px solid black;
+	border-radius:10px;
+}
+#findtb2 {
+	position:relative;
+    margin-top:30px;
+}
+#find_phone_td,
+#find_email_td  {
+	padding-left:40px;
+	font-size:14pt;
+}
+#id1{
+    padding-left:100px;
+    width:140px;
+}
+#phbtn,
+#embtn{
+	width:90px;
+	height:30px;
+	margin-right:30px;
+	background:gray;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/*pwd_find*/
+#pwd_find_img{
+	float:left;
+	margin-right:10px;
+}
+#pwd_find {
+	margin-top:30px;
+}
+#pwd_find_fm{
+    margin-top:70px;
+}
+#pwd_find_tb{
+    width:500px;
+	height:200px;
+	border: 2px gray solid;
+	border-radius:10px;
+}	
+#pwfind{
+	padding-left:30px;
+	height:30px;
+}
+#pwd_find_btn{
+	width:90px;
+	height:30px;
+	margin-right:30px;
+	background:gray;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#pwd{
+	padding-left:40px;
+	width:200px;
+	height:20px;
+}
+
+/*pwd_update*/
+#pwd_update_img{
+	float:left;
+	margin-right:10px;
+}
+#pwd_upda {
+	margin-top:30px;
+}
+#pwd_update_tb{
+    width:500px;
+	height:200px;
+	border-radius:10px;
+}	
+#pwd_update_fm{
+    margin-top:70px;
+}
+
+#pwdbtn{
+	width:90px;
+	height:30px;
+	margin-right:30px;
+	background:gray;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+#pwd_check{
+	padding-left:30px;
+	height:30px;
+}
+#pwd{
+	padding-left:40px;
+	width:200px;
+	height:20px;
+}
+
+/*mem_join*/
+#mem_join_img{
+	float:left;
+	margin-right:10px;
+}
+#mem_join{
+	margin-top:30px;
+}
+#mem_join_tb{
+	width:900px;
+	height:350px;
+	margin-top:70px;
+}
+
+#idbtn, #zipbtn {
+	margin-left:10px;
+}
+#agree{
+	float:left;
+	margin-top:20px;
+	margin-left:170px
+}
+#disagree{
+	float:right;
+	margin-top:20px;
+	margin-right:170px
+}
+
+#join_end{
+	float:left;
+	margin-top:20px;
+	margin-left:280px;
+}
+#close{
+	position:relative;
+	margin-top:20px;
+	margin-left:10px
+}
+
+/*mem_info*/
+#mem_info_img{
+	float:left;
+	margin-right:10px;
+}
+#mem_info{
+	margin-top:30px;
+}
+#mem_info_tb {
+	width:900px;
+	height:350px;
+	margin-top:70px;
+}
+
+#zipbtn {
+	margin-left:10px;
+}
+#update{
+	float:left;
+	margin-top:20px;
+	margin-left:155px;
+}
+
+#close{
+	position:relative;
+	margin-top:20px;
+}
+
+#delete_mem{
+	float:right;
+	margin-top:20px;
+	margin-right:300px;
+}
+
+/*delcheck, admin_delcheck*/
+#delcheck_tb{
+ 	margin-top:20px;
+ }
+#mem_del, #cancel{
+ 	margin-top:30px;
+ }
+#delcheck_tr{
+	height:40px
+}
+
+/*admin_page*/
+.top{
+	margin-top:30px;
+}
+
+#tab1, #tab2, #tab3, #tab4{
+	margin-top:40px;
+	width:100%;	
+	text-align:center
+}
+#admin_page_tr{
+	background-color:#eeeeee;
+ }
+
+.selected{
+	background-color:#eeeeee
+}
+#search{
+	float:right;
+	margin-top:40px;
+}
+#item_upload{
+	float:left;
+	margin-top:20px;
+}
+#item_soldout{
+	float:right;
+	margin-top:20px;
+}
+
+/*admin_info*/
+#admin_info_img{
+	float:left;
+	margin-right:10px;
+}
+#mem_info{
+	margin-top:30px;
+}
+#admin_info_tb {
+	width:900px;
+	height:350px;
+	margin-top:70px;
+}
+
+#zipbtn, #pwd_reset{
+	margin-left:10px;
+}
+
+#close{
+	float:left;
+	margin-top:20px;
+	margin-left:155px;
+}
+
+#delete_mem{
+	float:right;
+	margin-top:20px;
+	margin-right:155px;
+}

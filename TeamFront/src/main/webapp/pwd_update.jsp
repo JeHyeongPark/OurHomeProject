@@ -8,8 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link href="./css/bootstrap.min.css" rel="stylesheet">
-<link href="./css/main.css" rel="stylesheet">
-<link href="./css/pwd_update.css" rel="stylesheet">
+<link href="./css/asj.css" rel="stylesheet">
 
 <title>::비밀번호 재설정하기::</title>
 <script>
@@ -29,18 +28,18 @@
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">  
     <div class="top">
-      <img src="./icon/find_pwd.png" width="45px"> 
+      <img src="./icon/find_pwd.png" id="pwd_update_img" width="45px"> 
       <div id="pwd_upda"><font size="4"><b>비밀번호 재설정하기</b></font><br>
             영소문자 / 숫자 / 특수기호 3가지 포함 8자~16자 <p>
       </div>
        <hr>
     </div>
       
-    <div id="middle" align="center">
-      <form id="pwupfm" method="post" action="#">
-        <table id="pwuptb">
+    <div class="middle" align="center">
+      <form id="pwd_update_fm" method="post" action="#">
+        <table id="pwd_update_tb">
           <tr align="left" height="50">
-            <td colspan="3" id="pwch" valign="middle"><b>비밀번호 입력</b></td>
+            <td colspan="3" id="pwd_check" valign="middle"><b>비밀번호 입력</b></td>
           </tr>
           <tr height="30">
             <td id="pwd" width="140">비밀번호 입력</td>
