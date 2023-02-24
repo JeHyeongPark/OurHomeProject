@@ -5,11 +5,137 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>게시물찾기게시판</title>
+<title>질문게시판</title>
+<style>
+@charset "UTF-8";
 
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+body{
+    font-family:'S-CoreDream-3Light';
+}
+
+#faqPost_leftbar{
+	width:310px;
+	position:fixed;
+	padding:30px;
+	box-sizing:border-box;
+	background-color:beige;
+	height:100%;
+}
+
+
+#faqPost_contents{
+	padding:4% 5% 30% 5%;
+	margin-left:310px;
+}
+
+
+.faqPost_main{
+  padding-top:5%;
+
+}
+
+
+/* .footer {
+	background-color: #f4efe1;
+	text-align:center;
+	margin-left:310px;
+	
+} */
+
+.faqPost_footer {
+    bottom: 0;	
+    padding-top:3%;
+}
+.faqPost_footerdiv {		
+	background-color: #f4efe1;
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+}
+
+
+.faqPost_paging{
+	margin-left:44%;
+}
+
+
+
+.faqPost_paging li{
+	list-style:none;
+	float:left;
+	letter-spacing:10px;
+}
+
+.faqPost_write{
+	float:right;
+}
+	
+.faqPost_bottomsearch{
+	float:right;
+	margin-top:5%;
+}	
+
+.posttable{
+	width:100%;
+	border:1px solid rgb(192, 192, 192);
+	border-left:0;
+	border-right:0;
+}
+
+.movetable{
+	width:100%;
+	border:1px solid rgb(192, 192, 192);
+	border-left:0;
+	border-right:0;
+}
+.posttable th, .posttable td {
+  border:1px solid rgb(192, 192, 192);
+  padding:10px;
+  	border-left:0;
+	border-right:0;
+}
+
+.movetable th, .movetable td{
+  border:1px solid rgb(192, 192, 192);
+  padding:10px;
+  	border-left:0;
+	border-right:0;
+ 
+}
+
+.posttable td{
+  width:90%;
+}
+
+.movetable td{
+  width:90%;
+}
+
+.buttonarea{
+margin-bottom:5%
+}
+
+
+.buttonarea button{
+	float:right;
+	margin-right:0.5%
+}
+
+
+.movetablearea{
+margin-top:10%;
+}
+
+</style>
 <!-- 부트스트랩 -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/mine.css" rel="stylesheet">
+<!-- <link href="../css/mine.css" rel="stylesheet"> -->
 
 <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
 <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -20,19 +146,20 @@
 </head>
 <body>
 
-<div id="leftbar">
+<div id="faqPost_leftbar">
   <div class=""><a href="#">쇼핑몰</a></div>
 </div>  
 
-<div id="contents">
-  <div id="header">
-    <h4 class="text-center">게시물찾기</h4><p>
-	<h6 class="text-center">게시물찾기</h6>
+<div id="faqPost_contents">
+  <div id="faqPost_header">
+    <h4 class="text-center">FAQ</h4><p>
+	<h6 class="text-center">자주묻는질문</h6>
 	<hr>
   </div>
 
 
-<div class="main">
+<div class="faqPost_main">
+ <button class="faqPost_write">글쓰기</button>  
   <table class="table">
 			<thead>
 				<tr>
@@ -47,19 +174,19 @@
 					<td class="text-center">3</td>
 					<td class="text-center">게시판의 글제목3</td>
 					<td class="text-right">15:30</td>
-					<td>홍길동</td>
+					<td>사용자</td>
 				</tr>
 				<tr>
 					<td class="text-center">2</td>
 					<td class="text-center">게시판의 글제목2</td>
 					<td class="text-right">15:20</td>
-					<td>홍길동</td>
+					<td>사용자2</td>
 				</tr>
 				<tr>
 					<td class="text-center">1</td>
 					<td class="text-center">게시판의 글제목1</td>
 					<td class="text-right">14:20</td>
-					<td>홍길동</td>
+					<td>사용자3</td>
 				</tr>
 			</tbody>
 		</table>
@@ -69,7 +196,7 @@
 
 
 
-<div class="paging">
+<div class="faqPost_paging">
   <ul>
     <li><a href="#"><</a></li> 
     <li><a href="#">1</a></li> 
@@ -83,8 +210,8 @@
 
 
 <!-- 검색구역 -->
-  <form id="boardSearchForm">
-  <div class="bottomsearch">
+  <form id="faqPost_boardSearchForm">
+  <div class="faqPost_bottomsearch">
         분류선택 &nbsp;
         <select id="search_key" name="search_key">
           <option value="all">전체</option>
@@ -106,13 +233,15 @@
 
 
 <!-- footer구역 -->
-	<footer>
-		<div class="footer" >
+	<footer class="faqPost_footer">
+		<div class="faqPost_footerdiv" >
 			상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구<p>
 				사업자번호 xxx-xx-xxxxx<p>
  				이메일 | 교환,반품 주소지<p>			
 		</div>
 	</footer>
+
+
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
