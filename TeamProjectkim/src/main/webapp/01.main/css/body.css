@@ -1,0 +1,100 @@
+/*전체범위설정 footer내릴려고
+.html, body {
+    height: 100%  
+}*/
+
+
+  #container{
+    margin-left:310px;
+  	min-height: 100%;
+  	
+    padding-left:5%;
+	padding-right:5%;
+	
+  }
+  
+  .conent {	
+	width:100%; 
+	height: 100%;
+
+	   
+}
+ .conent_slider {
+	margin:0px auto;	
+	background-color: #f4efe1; height: 30%;
+
+}
+
+ .conent_list {
+	margin:0px auto;	
+	width:100%; 	
+	height: 70%;	
+	padding-top:10%;	
+	
+}
+
+
+/*3.슬라이더부분 이미지 사이즈*/
+
+.slider{
+	 width:100%;
+	 height:100%;
+}
+
+/*4.제품목록 이미지색변화*/
+.warp{
+	position: relative;
+	display: black;
+  	transition: .5s ease;  
+ 	list-style-type: none;
+	/*background-color:#90827a;*/
+	background-color: #f4efe1;
+}
+
+img{	
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+}
+
+.warp:hover .text{
+  opacity: 1.0;
+}
+.warp:hover .img{
+  opacity: 0.7;
+}
+
+
+/*글씨 위치조정 */
+.text{
+	position: absolute;
+	padding: 5px 10px;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );	
+	transition: .5s ease;  
+	opacity: 0;
+	color:#ffffff;
+	z-index:50;
+}
+
+
+/* 5.하단부분 */
+footer:ftk {
+    bottom: 0;	
+    padding-top:3%;
+}
+.footer {		
+	background-color: #f4efe1;
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+
+}
+
+
+
+
+
+	
+

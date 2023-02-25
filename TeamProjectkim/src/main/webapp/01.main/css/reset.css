@@ -1,0 +1,47 @@
+/*슬라이드 부분*/
+
+.m_slide{
+  width:100%;
+  margin:0px auto;
+  position:relative;
+  transition: margin-left 0.5s;
+}
+.m_slide> ul{
+  /* width:6400px; */
+  width:400%;
+  display:flex;
+}
+.m_slide > ul > li{width:100%;}
+.m_slide img{width:100%;}  /* 이미지 크기 자동조절 */
+
+
+/*버튼사이즈 범위설정*/
+ .slide-btns > div >button{
+  position:absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  opacity:0.5;
+  border-radius:50px;
+  font-size:25px;
+  cursor:pointer;
+  padding: 10px 10px;
+}
+
+.slide-btns > div >button#btnNext {
+  top:50%;
+  left:auto;
+  right:40px;
+}
+.slide-btns > div > button#btnPrev{
+  top:50%;
+  left:30px;
+  transform:translatey(-50%);
+}
+
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+
