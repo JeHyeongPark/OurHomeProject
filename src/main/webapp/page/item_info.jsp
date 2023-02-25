@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>카테고리상품페이지</title>
 <link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/custom2.css" rel="stylesheet">
+<link href="../css/ssj.css" rel="stylesheet">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -26,7 +26,7 @@
 	<div id="contents">
 		<!-- 메인 -->
 		<div>
-			<div class="herder">
+			<div class="post_header">
 				<h2>러그 | 잡화</h2>
 					<div class="color">
 						<a href="#" class="btn btn-default btn-xs" role="button">무료배송</a>
@@ -45,10 +45,10 @@
 					<p>
 					<div>
 					
-						<ul>
-							<li class="img"><a class="info" href="#">
+						<ul class="itmeinfo_ul">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/fork.avif">
+										<img class="itmeinfo_img" alt="" src="../img/fork.avif">
 									</div>
 									<div>
 										<strong>19,900 원</strong> <!-- 상품제목글 -->
@@ -58,63 +58,63 @@
 										<p>블랙 / 핑크 외 8가지 중 선택 1</p>
 									</div> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/cup1.avif">
+										<img class="itmeinfo_img" alt="" src="../img/cup1.avif">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
 									</div>
 									<p>"귀여운 고양이"</p> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/fryingpan.avif">
+										<img class="itmeinfo_img" alt="" src="../img/fryingpan.avif">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
 									</div>
 									<p>"귀여운 고양이"</p> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/cookware.webp">
+										<img class="itmeinfo_img" alt="" src="../img/cookware.webp">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
 									</div>
 									<p>"귀여운 고양이"</p> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/knife.jpeg">
+										<img class="itmeinfo_img" alt="" src="../img/knife.jpeg">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
 									</div>
 									<p>"귀여운 고양이"</p> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/pot.jpeg">
+										<img class="itmeinfo_img" alt="" src="../img/pot.jpeg">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
 									</div>
 									<p>"귀여운 고양이"</p> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/spoon.webp">
+										<img class="itmeinfo_img" alt="" src="../img/spoon.webp">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
 									</div>
 									<p>"귀여운 고양이"</p> <!-- 상품설명글 -->
 							</a></li>
-							<li class="img"><a class="info" href="#">
+							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
-										<img alt="" src="../img/steamer.webp">
+										<img class="itmeinfo_img" alt="" src="../img/steamer.webp">
 									</div>
 									<div>
 										<strong>가격</strong> <!-- 상품제목글 -->
@@ -131,8 +131,8 @@
 				</div>
 			<!-- </div> -->
 
-			<footer class="container-fluid navbar-fixed-bottom">
-				<div class="footer">footer구역</div>
+			<footer class="container-fluid navbar-fixed-bottom post_footer">
+				<div>footer구역</div>
 			</footer>
 
 

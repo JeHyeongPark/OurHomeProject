@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 <link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/custom1.css" rel="stylesheet">
+<link href="../css/ssj.css" rel="stylesheet">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -33,7 +33,7 @@
 	<div id="contents">
 		<!-- 메인 -->
 		<div>
-			<div class="herder">
+			<div class="post_header">
 				<h2>상품리뷰</h2>
 			</div>
 			<hr>
@@ -50,16 +50,22 @@
 			<h5>포토&동영상 9건</h5>
 			<div class="text-center ">
 				<div>
-					<ul>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><a href="#" class="img"><img src="../img/cup1.avif"></a></li>
-						<li><button type="button" class="btn btn-default btn-block theView" id="moreList">더보기</button></li>
+					<ul class="itemReview_ul">
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<li class="itemReview_li"><a href="#" class="itemReview_imgline"><img class="itemReview_img" src="../img/cup1.avif"></a></li>
+						<!-- onclick="location.href='' " => 해당경로페이지로 이동 | onclick = "window.open('새창으로 띄울 경로') => 새창으로 열기 | 
+					onclick = "window.open('https://naver.com', 'window_name', 'width=430, height=500, location=no, status=no, scrollbars=yes');" => 팝업으로 열기-->
+						<li class="itemReview_li"><button type="button" class="btn btn-default btn-block theView"
+						onclick="window.open('./poto_review.jsp','window_name', 'width=430, height=400,top=300,left=700, location=no, status=no, scrollbars=yes');">
+						더보기</button></li>
+						<!--더보기 버튼 클릭시 팝업창에 전체 포토/동영상 리뷰 글 보기
+						top,left로 팝업위치 조절  -->
 					</ul>
 				</div>
 			</div>
@@ -68,47 +74,49 @@
 		<p>
 		<hr>
 		<!-- 게시글 영역 -->
-		<button button class="btn btn-primary btn-sm" >글쓰기</button>
+		<button button class="btn btn-primary btn-sm" onclick="location.href='페이지경로' ">글쓰기</button><p>
+		<!-- onclick="location.href='' " => 해당경로페이지로 이동 | onclick = "window.open('새창으로 띄울 경로') => 새창으로 열기 | 
+					onclick = "window.open('https://naver.com', 'window_name', 'width=430, height=500, location=no, status=no, scrollbars=yes');" => 팝업으로 열기-->
 			<div>
 				<table class="table  table-hover ">
 					<tr class="text-center something">
-						<td class="col-md-2">이미지</td>
+						<td class="col-md-2">글번호</td>
 						<td class="col-md-6">내용</td>
 						<td class="col-md-3">작성자</td>
 						<td class="col-md-1">별점</td>
 					</tr>
 					<tr class="text-center">
-						<td>img1</td>
+						<td>1</td>
 						<td>내용</td>
 						<td>작성자</td>
 						<td>별점</td>
 					</tr>
 					<tr class="text-center">
-						<td>img2</td>
+						<td>2</td>
 						<td>내용</td>
 						<td>작성자</td>
 						<td>별점</td>
 					</tr>
 					<tr class="text-center">
-						<td>img3</td>
+						<td>3</td>
 						<td>내용</td>
 						<td>작성자</td>
 						<td>별점</td>
 					</tr>
 					<tr class="text-center">
-						<td>img4</td>
+						<td>4</td>
 						<td>내용</td>
 						<td>작성자</td>
 						<td>별점</td>
 					</tr>
 					<tr class="text-center">
-						<td>img5</td>
+						<td>5</td>
 						<td>내용</td>
 						<td>작성자</td>
 						<td>별점</td>
 					</tr>
 					<tr class="text-center">
-						<td>img6</td>
+						<td>6</td>
 						<td>내용</td>
 						<td>작성자</td>
 						<td>별점</td>
@@ -116,8 +124,8 @@
 				</table>
 			</div>
 
-	<footer class="container-fluid navbar-fixed-bottom">
-			<div class="footer">footer구역</div>
+	<footer class="container-fluid navbar-fixed-bottom post_footer">
+			<div>footer구역</div>
 		</footer>
 	</div>
 	<!-- 전체컨테이너 -->

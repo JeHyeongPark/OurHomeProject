@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>상품문의게시판</title>
 <link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/custom1.css" rel="stylesheet"> 
+<link href="../css/ssj.css" rel="stylesheet"> 
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -26,7 +26,7 @@
 	<div id="contents">
 		<!-- 메인 -->
 		<div>
-			<div class="herder">
+			<div class="post_header">
 				<h2>상품문의</h2>
 			</div>
 			<hr>
@@ -38,7 +38,9 @@
 		<div class="row">
 			<div>
 				<div>
-					<button button class="btn btn-primary btn-sm" >상품Q&A작성하기</button>
+					<button button class="btn btn-primary btn-sm" onclick="location.href='페이지경로' " >상품Q&A작성하기</button>
+					<!-- onclick="location.href='' " => 해당경로페이지로 이동 | onclick = "window.open('새창으로 띄울 경로') => 새창으로 열기 | 
+					onclick = "window.open('https://naver.com', 'window_name', 'width=430, height=500, location=no, status=no, scrollbars=yes');" => 팝업으로 열기-->
 				</div>
 			<p>
 			<hr>
@@ -75,8 +77,8 @@
 			</div>
 		</div>
 
-		<footer class="container-fluid navbar-fixed-bottom">
-			<div class="footer">footer구역</div>
+		<footer class="container-fluid navbar-fixed-bottom post_footer">
+			<div>footer구역</div>
 		</footer>
 
 

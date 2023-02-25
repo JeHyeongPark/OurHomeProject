@@ -13,7 +13,7 @@
 #contents {
 	padding: 4% 5% 30% 5%;
 	margin-left: 310px;
-}.footer {
+}.iteminfo_footer {
 	text-align: center;
 	background-color: #f4efe1;
 }
@@ -21,28 +21,26 @@
 	width: 50%;
 	text-align: center;
 }
-img {
+.itmeinfo_img {
 	width: 100%;
 	overflow-clip-margin: content-box;
 	overflow: clip;
 }
-.img {
+.iteminfo_imgline{
 	width: 300px;
 	height: 360px; 
 	margin:auto;
+	overflow: hidden;
+	padding: 1%;
+	float: left;
 }
-ul {
+.itmeinfo_ul {
 	list-style: none;
 	display: block;
 	overflow: hidden;
 }
 
-ul>li {
-	overflow: hidden;
-	padding: 1%;
-	float: left;
-}
-.info {
+.iteminfo_info {
 	text-decoration: none;
 	color: black;
 	position: relative;
