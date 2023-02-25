@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.font-face {
+	font-family: 'S-CoreDream-3Light';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.body {
+	font-family: 'S-CoreDream-3Light';
+}
+
+.cart_num_leftbar {
+	width: 310px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 30px;
+	box-sizing: border-box;
+	z-index: 98;
+	letter-spacing: 0.5px;
+	background-color: beige;
+	height: 100%;
+}
+
+.cart_num_sangpum {
+	margin-left: 395px;
+}
+
+.cart_num_main {
+	width: 68%;
+	margin-left: 400px;
+	text-align: center;
+}
+
+.cart_num_footer {
+	bottom: 0;
+	background-color: #f4efe1;
+	text-align: center;
+	width: 100%;
+	padding-left: 110px;
+	margin: 0 auto;
+	position: absolute;
+}
+ .cart_num_right_displaynone{ 
+	margin-left: 400px;
+}
+.cart_num_typeList{ 
+	margin-left: 400px;
+}
+.cart_num_sagje {
+	margin-left: 420px;
+}
+
+.cart_num_gLeft {
+	margin-left: 1120px;
+}
+
+.cart_num_right {
+	margin-left: 400px;
+}
+
+.cart_num_gBorder {
+	margin-left: 580px;
+	text-align: center;
+}
