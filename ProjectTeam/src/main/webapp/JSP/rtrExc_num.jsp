@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
 <title>교환내역</title>
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="../css/rtrExc_num.css" rel="stylesheet">
 </head>
 <body>
@@ -25,48 +25,21 @@
 	</div>
 	<form name="searchdays" id="searchdays" action="orderlist.php"
 		method="post">
+
 		<div class="xans-element- xans-myshop xans-myshop-orderhistoryhead ">
 			<fieldset class="rtrExc_num_ec-base-box">
 				<legend>검색기간설정</legend>
-				<span class="period"> <a href="orderlist.php?basicdays=00"
-					class="btnNormal" days="00"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date1.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date1.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date1_on.gif"
-						alt="오늘" /></a> <a href="orderlist.php?basicdays=7" class="btnNormal"
-					days="07"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date2.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date2.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date2_on.gif"
-						alt="1주일" /></a> <a href="orderlist.php?basicdays=30"
-					class="btnNormal" days="30"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date3.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date3.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date3_on.gif"
-						alt="1개월" /></a> <a href="orderlist.php?basicdays=90"
-					class="btnNormal" days="90"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date4.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date4.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date4_on.gif"
-						alt="3개월" /></a> <a href="orderlist.php?basicdays=180"
-					class="btnNormal" days="180"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date5.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date5.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date5_on.gif"
-						alt="6개월" /></a>
-				</span> <input id="history_start_date" name="sdate" class="fText"
-					readonly="readonly" size="10" value="2022-12-22" type="text" /> ~
-				<input id="history_end_date" name="edate" class="fText"
-					readonly="readonly" size="10" value="2023-02-17" type="text" /> <input
-					alt="조회" id="order_search_btn" type="image"
-					src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/admin_ko_KR/myshop/btn_search.gif" />
+				<label for="date"> <input type="date" id="date"
+					max="2080-12-22" min="2008-11-02" value="">
+				</label> -<label for="date"> <input type="date" id="date"
+					max="2080-12-22" min="2008-11-02" value="">
+				</label> <button class="button">조회</button>
+				
 				<br>
 			</fieldset>
 		</div>
-
 	</form>
-	<div
-		class="rtrExc_num_typeList">
+	<div class="rtrExc_num_typeList">
 
 		<table border="1" summary="">
 			<colgroup>
@@ -95,10 +68,9 @@
 				<tr class="xans-record-">
 					<td class="number ">2023-2-17
 						<p>
-							<a href="orderview.php?index_no=1438197" class="line">[20230217-1438197]</a>
+							<a href="#" class="line">[20230217-1438197]</a>
 						</p>
-					<td class="thumb"><a href="/shop/view.php?index_no=12332"><img
-							src="../img/1.jpg" width="300" height="240" alt="" /></a>
+					<td style="line-height: 0"><img src="../img/1.jpg"width="300" height="240" alt="#" /></td>
 					<td class="product left top">구름 러그<strong class="name"><a
 							href="/shop/view.php?index_no=12332" class="ec-product-name">
 						</a></strong>

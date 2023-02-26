@@ -8,11 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
 <title>주문취소내역</title>
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!-- 부트스트랩 -->
+<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="../css/cancle_order.css" rel="stylesheet">
+
 </head>
 <body>
-	<div class="cancel_order_leftbar">
+	<div class="cancle_order_leftbar">
 		<ul class="nav">
 			<li>회원가입</li>
 			<li>회원로그인</li>
@@ -20,53 +22,24 @@
 			<li>설문조사</li>
 		</ul>
 	</div>
-	<div class="cancel_order_title">
+
+	<div class="cancle_order_title">
 		<h2>주문취소내역</h2>
-	</div>
-	<form name="searchdays" id="searchdays" action="orderlist.php"
-		method="post">
+		<form name="searchdays" id="searchdays" action="orderlist.php"
+			method="post"></form>
 		<div class="xans-element- xans-myshop xans-myshop-orderhistoryhead ">
-			<fieldset class="cancel_order_ec-base-box ">
+			<fieldset class="cancle_order_base-box ">
 				<legend>검색기간설정</legend>
-				<span class="period"> <a href="orderlist.php?basicdays=00"
-					class="btnNormal" days="00"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date1.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date1.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date1_on.gif"
-						alt="오늘" /></a> <a href="orderlist.php?basicdays=7" class="btnNormal"
-					days="07"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date2.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date2.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date2_on.gif"
-						alt="1주일" /></a> <a href="orderlist.php?basicdays=30"
-					class="btnNormal" days="30"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date3.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date3.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date3_on.gif"
-						alt="1개월" /></a> <a href="orderlist.php?basicdays=90"
-					class="btnNormal" days="90"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date4.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date4.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date4_on.gif"
-						alt="3개월" /></a> <a href="orderlist.php?basicdays=180"
-					class="btnNormal" days="180"><img
-						src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date5.gif"
-						offimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date5.gif"
-						onimage="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base_ko_KR/myshop/btn_date5_on.gif"
-						alt="6개월" /></a>
-				</span> <input id="history_start_date" name="sdate" class="fText"
-					readonly="readonly" size="10" value="2022-12-22" type="text" /> ~
-				<input id="history_end_date" name="edate" class="fText"
-					readonly="readonly" size="10" value="2023-02-17" type="text" /> <input
-					alt="조회" id="order_search_btn" type="image"
-					src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/admin_ko_KR/myshop/btn_search.gif" />
-				<br>
+				<label for="date"> <input type="date" id="date"
+					max="2080-12-22" min="2008-11-02" value="">
+				</label> -<label for="date"> <input type="date" id="date"
+					max="2080-12-22" min="2008-11-02" value="">
+					<button name="button">조회</button></label>
 			</fieldset>
 		</div>
+	</div>
 
-	</form>
-	<div
-		class="cancel_order_typeList">
+	<div class="cancle_order_typeList">
 
 		<table border="1" summary="">
 			<colgroup>
@@ -92,13 +65,13 @@
 				</tr>
 			</thead>
 			<tbody class="center ">
-				<tr class="cancel_order_xans-record-">
+				<tr class="xans-record-">
 					<td class="number ">2023-2-17
 						<p>
 							<a href="orderview.php?index_no=1438197" class="line">[20230217-1438197]</a>
 						</p>
-					<td class="thumb"><a href="/shop/view.php?index_no=12332"><img
-							src="../img/5.jpg" width="300" height="240" alt="" /></a>
+					<td style="line-height: 0"><img src="../img/5.jpg" width="300"
+						height="240" alt="#" /></td>
 					<td class="product left top">루시 테이블<strong class="name"><a
 							href="/shop/view.php?index_no=12332" class="ec-product-name">
 						</a></strong>
@@ -124,7 +97,7 @@
 	<!-- footer구역 -->
 	<footer class="container-fluid navbar-fixed-bottom">
 		<div class="footer">footer구역</div>
-		<div class="cancel_order_footer">
+		<div class="cancle_order_footer">
 			<!--   -->
 			상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구
 			<p>사업자번호 xxx-xx-xxxxx
@@ -138,5 +111,6 @@
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
 	<script src="../js/bootstrap.min.js"></script>
+
 </body>
 </html>

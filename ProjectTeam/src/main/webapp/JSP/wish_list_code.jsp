@@ -8,8 +8,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
 <title>관심상품</title>
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="../css/wish_list_code.css" rel="stylesheet">
+<meta charset="utf-8">
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#cbx_chkAll").click(function() {
+			if ($("#cbx_chkAll").is(":checked"))
+				$("input[name=chk]").prop("checked", true);
+			else
+				$("input[name=chk]").prop("checked", false);
+		});
+
+		$("input[name=chk]").click(function() {
+			var total = $("input[name=chk]").length;
+			var checked = $("input[name=chk]:checked").length;
+
+			if (total != checked)
+				$("#cbx_chkAll").prop("checked", false);
+			else
+				$("#cbx_chkAll").prop("checked", true);
+		});
+	});
+</script>
 </head>
 <body>
 	<div class="wish_list_code_sangpum">
@@ -29,19 +52,18 @@
 			class="xans-element- xans-myshop xans-myshop-wishlist ec-base-table typeList xans-record-">
 			<table border="1" summary="">
 				<colgroup>
-					<col style="width: 32px;" />
+					<col style="width: 40px;" />
 					<col style="width: 130px" />
 					<col style="width: 200px" />
 					<col style="width: 125px" />
 					<col style="width: 100px" />
 					<col style="width: 130px" />
 					<col style="width: 150px" />
-					<col style="width: 260px" />
+					<col style="width: 300px" />
 				</colgroup>
 				<thead>
 					<tr>
-						<th scope="col"><input type="checkbox"
-							onclick="wishchkall();" /></th>
+						<th><input type="checkbox" id="cbx_chkAll" /></th>
 						<th scope="col">이미지</th>
 						<th scope="col">상품정보</th>
 						<th scope="col">판매가</th>
@@ -52,14 +74,13 @@
 						<th scope="col">선택</th>
 					</tr>
 				</thead>
+
 				<tbody class="center"
 					class="xans-element- xans-myshop xans-myshop-wishlistitem center">
 					<tr class="xans-record-">
-						<td><input type='checkbox' name='goodsindex'
-							class='goodsindex' value='299772' data-account='78000'></td>
-						<td class="thumb"><a href="/shop/view.php?index_no=9911">
-								<img src="../img/1.jpg" width="300" height="240" alt="" />
-						</a></td>
+						<td><input type="checkbox" name="chk"></td>
+						<td style="line-height: 0"><img src="../img/1.jpg"
+							width="300" height="240" alt="#" /></td>
 						<td class="left"><strong class="name"><a
 								href="/shop/view.php?index_no=12206" class="ec-product-name"></a></strong>
 							<li class="xans-record-">구름러그</li></td>
@@ -71,20 +92,15 @@
 							<div class="txtInfo">기본배송</div>
 						</td>
 						<td class="price right"><strong class="">18,000원</strong></td>
-						<td class="button"><a href="#none"
-							onclick="wishorder('299772')" class="btnSubmit ">주문하기</a> <a
-							href="#none" onclick="wishsave_fb('299772','9911','78000');"
-							class="btnNormal ">장바구니담기</a> <a
-							href="javascript:wishdel('299772')"
-							class="btnNormal btn_wishlist_del"><i class="icoDelete"></i>
-								삭제</a></td>
+						<td><input type="button" style="width: 80px; height: 25px"
+							value="주문하기"> <input type="button"
+							style="width: 80px; height: 25px" value="삭제하기"> <input
+							type="button" style="width: 100px; height: 25px" value="장바구니담기">
 					</tr>
 					<tr class="xans-record-">
-						<td><input type='checkbox' name='goodsindex'
-							class='goodsindex' value='299771' data-account='28000'></td>
-						<td class="thumb"><a href="/shop/view.php?index_no=12206">
-								<img src="../img/2.jpg" width="300" height="240" alt="" />
-						</a></td>
+						<td><input type="checkbox" name="chk"></td>
+						<td style="line-height: 0"><img src="../img/2.jpg"
+							width="300" height="240" alt="#" /></td>
 						<td class="left"><strong class="name"><a
 								href="/shop/view.php?index_no=12206" class="ec-product-name"></a></strong>
 							<li class="xans-record-">마름모 러그</li></td>
@@ -97,20 +113,15 @@
 						</td>
 
 						<td class="price right"><strong class="">21,000원</strong></td>
-						<td class="button"><a href="#none"
-							onclick="wishorder('299771')" class="btnSubmit ">주문하기</a> <a
-							href="#none" onclick="wishsave_fb('299771','12206','28000');"
-							class="btnNormal ">장바구니담기</a> <a
-							href="javascript:wishdel('299771')"
-							class="btnNormal btn_wishlist_del"><i class="icoDelete"></i>
-								삭제</a></td>
+						<td><input type="button" style="width: 80px; height: 25px"
+							value="주문하기"> <input type="button"
+							style="width: 80px; height: 25px" value="삭제하기"> <input
+							type="button" style="width: 100px; height: 25px" value="장바구니담기">
 					</tr>
 					<tr class="xans-record-">
-						<td><input type='checkbox' name='goodsindex'
-							class='goodsindex' value='299770' data-account='148000'></td>
-						<td class="thumb"><a href="/shop/view.php?index_no=12169">
-								<img src="../img/3.jpg" width="300" height="240" alt="" />
-						</a></td>
+						<td><input type="checkbox" name="chk"></td>
+						<td style="line-height: 0"><img src="../img/3.jpg"
+							width="300" height="240" alt="#" /></td>
 						<td class="left"><strong class="name"><a
 								href="/shop/view.php?index_no=12169" class="ec-product-name">
 							</a></strong>
@@ -123,28 +134,25 @@
 							<div class="txtInfo">기본배송</div>
 						</td>
 
-						<td class="price right"><strong class="">47,000원</strong>
-						<td class="button"><a href="#none"
-							onclick="wishorder('299770')" class="btnSubmit ">주문하기 </a> <a
-							href="#none" onclick="wishsave_fb('299770','12169','148000');"
-							class="btnNormal ">장바구니담기</a> <a
-							href="javascript:wishdel('299770')"
-							class="btnNormal btn_wishlist_del"><i class="icoDelete"></i>
-								삭제</a></td>
+						<td class="price right"><strong class="">47,000원</strong></td>
+						<td><input type="button" style="width: 80px; height: 25px"
+							value="주문하기"> <input type="button"
+							style="width: 80px; height: 25px" value="삭제하기"> <input
+							type="button" style="width: 100px; height: 25px" value="장바구니담기">
+					</tr>
 				</tbody>
 			</table>
 			<h3>
 				<div class="wish_list_code_contents">
-					<span class="gLeft"> <strong class="text"></strong> <a
-						href="#none" onclick="del_chwish();;" class="btnEm"><i
-							class="icoDelete"></i> 장바구니 담기</a> <a href="#none"
-						onclick="movecartt_fb()" class="btnNormal">삭제하기</a>
-					</span> <a href="#none" onclick="del_allwish();" class="btnEmFix sizeM">전체상품주문</a>
+					<input type="button" style="width: 80px; height: 25px" value="주문하기">
+					<input type="button" style="width: 80px; height: 25px" value="삭제하기">
+					<input type="button" style="width: 100px; height: 25px"
+						value="장바구니담기">
 			</h3>
 		</div>
-</div>
+	</div>
 
-	
+
 	<!-- footer구역 -->
 	<footer class="container-fluid navbar-fixed-bottom">
 		<div class="footer">footer구역</div>

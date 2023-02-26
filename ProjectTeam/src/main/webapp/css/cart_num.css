@@ -27,12 +27,12 @@
 }
 
 .cart_num_sangpum {
-	margin-left: 395px;
+	margin-left: 550Px;
 }
 
 .cart_num_main {
 	width: 68%;
-	margin-left: 400px;
+	margin-left: 550px;
 	text-align: center;
 }
 
@@ -46,24 +46,24 @@
 	position: absolute;
 }
  .cart_num_right_displaynone{ 
-	margin-left: 400px;
+	margin-left: 550px;
 }
 .cart_num_typeList{ 
-	margin-left: 400px;
+	margin-left: 550px;
 }
 .cart_num_sagje {
-	margin-left: 420px;
-}
-
-.cart_num_gLeft {
-	margin-left: 1120px;
+	margin-left: 550px;
 }
 
 .cart_num_right {
-	margin-left: 400px;
+	margin-left: 550px;
 }
 
 .cart_num_gBorder {
-	margin-left: 580px;
+	margin-left: 175px;
 	text-align: center;
+}
+.cart_num_ec-base-button{ 
+	margin-left: 1050px;
+	
 }

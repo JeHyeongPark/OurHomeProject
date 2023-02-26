@@ -10,8 +10,32 @@
 <title>장바구니</title>
 
 <!-- 부트스트랩 -->
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="../css/cart_num.css" rel="stylesheet">
+<meta charset="utf-8">
+<title>체크박스 연습</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#cbx_chkAll").click(function() {
+			if ($("#cbx_chkAll").is(":checked"))
+				$("input[name=chk]").prop("checked", true);
+			else
+				$("input[name=chk]").prop("checked", false);
+		});
+
+		$("input[name=chk]").click(function() {
+			var total = $("input[name=chk]").length;
+			var checked = $("input[name=chk]:checked").length;
+
+			if (total != checked)
+				$("#cbx_chkAll").prop("checked", false);
+			else
+				$("#cbx_chkAll").prop("checked", true);
+		});
+	});
+</script>
 </head>
 <body>
 	<div class="cart_num_leftbar">
@@ -23,16 +47,16 @@
 		</ul>
 	</div>
 	<div class="cart_num_sangpum">
-		<h1>장바구니</h1>
+		<h2>장바구니</h2>
 		<p></p>
 	</div>
 	<!-- //gtm -->
 	<div
 		class="xans-element- xans-order xans-order-dcinfo ec-base-box typeMember ">
 		<p class="cart_num_right_displaynone">
-			<b>장바구니에 담긴 상품은 7일 동안 보관됩니다.</b> 
+			<b>장바구니에 담긴 상품은 7일 동안 보관됩니다.</b>
 		<div class="cart_num_typeList">
-		    <p>(일반상품)</p>
+			<p>(일반상품)</p>
 			<div class="xans-element- xans-order xans-order-normtitle title ">
 				<p></p>
 			</div>
@@ -53,12 +77,11 @@
 					<col style="width: 120px" />
 					<col style="width: 150px" />
 					<col style="width: 150px" />
-					<col style="width: 110px" />
+					<col style="width: 200px" />
 				</colgroup>
 				<thead>
 					<tr>
-						<th scope="col"><input type="checkbox"
-							onclick="cartchkall();" /></th>
+						<th><input type="checkbox" id="cbx_chkAll" /></th>
 						<th scope="col">이미지</th>
 						<th scope="col">상품정보</th>
 						<th scope="col">판매가</th>
@@ -83,11 +106,9 @@
 				<tbody class="center"
 					class="xans-element- xans-myshop xans-myshop-wishlistitem center">
 					<tr class="xans-record-">
-						<td><input type='checkbox' name='goodsindex'
-							class='goodsindex' value='299772' data-account='78000'></td>
-						<td class="thumb"><a href="/shop/view.php?index_no=9911">
-								<img src="../img/1.jpg" width="300" height="240" alt="" />
-						</a></td>
+						<td><input type="checkbox" name="chk"></td>
+						<td style="line-height: 0"><img src="../img/1.jpg"
+							width="300" height="240" alt="#" /></td>
 						<td class="left gClearLine"><strong class="name"><a
 								href="/shop/view.php?index_no=12286" class="ec-product-name">
 							</a></strong>
@@ -114,7 +135,7 @@
 										src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base/common/btn_quantity_down.gif"
 										alt="수량감소" class="down" />
 							</span> <a href="javascript:changeeanew(7199613, 'cha');"
-								class="btnNormal gBlank5">변경</a>
+								class="btnNormal gBlank5"></a>
 						</span> <span class="displaynone"><center></span>
 							</center></td>
 						<td><span class="txtInfo"><img
@@ -126,85 +147,71 @@
 							</div>
 						</td>
 
-						<td class="right">
+						<td class="cart_num_right">
 							<center>
 								<strong>18,000원</strong>
 							</center>
-							<div class="displaynone"></div>
+							<div class="cart_num_displaynone"></div>
 						</td>
-						<td class="button">
-							<!--
-					<a href="javascript:;" class="btnSubmit" onclick="Basket.orderBasketItem(0);">주문하기</a>
-					--> <a href="#none" class="btnNormal select_del"
-							data-index="7199613" data-gname="킨시프 벨벳퍼프골지맨투맨"
-							data-account="78000" data-category='티' data-index_no="12286"><i
-								class="icoDelete"></i>삭제하기</a>
-						</td>
+						<td><input type="button" style="width: 80px; height: 25px"
+							value="주문하기"> <input type="button"
+							style="width: 80px; height: 25px" value="삭제하기">
 					</tr>
 				</tbody>
 			</table>
 		</div>
-		<div class="cart_num_gBorder "></div>
-		<div class="xans-element- xans-order xans-order-basketpriceinfoguide ">
+		<p></p>
+		<div class="cart_num_ec-base-button ">
+			<td><input type="button" style="width:125px;height:30px"value="전체상품주문하기"></td>
 		</div>
-		<strong>
-			<div
-				class="xans-element- xans-order xans-order-selectorder ec-base-button ">
-				<span class="cart_num_gLeft"> <span class="cart_num_gRight">
-						<a href="#none" class="btnNormal" onclick="del_all_jull();">전체상품주문</a>
-				</span>
-				</span>
 
-			</div>
-	</div>
-	</strong>
-	<!--CSS .gBorder	 -->
+		<!--CSS .gBorder	 -->
+		<div class="cart_num_gBorder">
+			<table border="1" summary="">
+				<caption>총 주문금액</caption>
+				<colgroup>
+					<col style="width: 300px;" />
+					<col style="width: 300px;" class="displaynone" />
+					<col style="width: 300px;" />
+				</colgroup>
+				<thead>
 
-	<div class="cart_num_gBorder">
-		<table border="1" summary="">
-			<caption>총 주문금액</caption>
-			<colgroup>
-				<col style="width: 300px;" />
-				<col style="width: 300px;" class="displaynone" />
-				<col style="width: 300px;" />
-			</colgroup>
-			<thead>
+					<tr>
+						<th scope="col"><strong>총 상품금액</strong></th>
+						<th scope="col"><strong>총 배송비</strong></th>
+						<th scope="col"><strong>결제예정금액</strong></th>
 
-				<tr>
-					<th scope="col"><strong>총 상품금액</strong></th>
-					<th scope="col"><strong>총 배송비</strong></th>
-					<th scope="col"><strong>결제예정금액</strong></th>
+					</tr>
+				</thead>
+				<tbody class="center">
+					<tr>
+						<td>
+							<div class="box txt16">
+								<strong><span class="txt23">18,000</span></strong><span
+									class="txt14 displaynone"></span>
+							</div>
+						</td>
+						<td>
+							<div class="box shipping txt16">
+								<strong class="txt23">+ </strong><strong><span
+									class="txt23">0</span></strong><span class="txt14 displaynone"></span>
+							</div>
+						</td>
+						<td>
+							<div class="box txtEm txt16">
+								<strong class="txt23">= </strong><strong><span
+									class="txt23">18,000원</span></strong><span class="txt14 displaynone"></span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="#none" class="close"
+				onclick="OrderLayer.offDiv('order_layer_benefit');"><img
+				src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base/common/btn_close.gif"
+				alt="닫기" /></a>
+		</div>
 
-				</tr>
-			</thead>
-			<tbody class="center">
-				<tr>
-					<td>
-						<div class="box txt16">
-							<strong><span class="txt23">18,000</span></strong><span
-								class="txt14 displaynone"></span>
-						</div>
-					</td>
-					<td>
-						<div class="box shipping txt16">
-							<strong class="txt23">+ </strong><strong><span
-								class="txt23">0</span></strong><span class="txt14 displaynone"></span>
-						</div>
-					</td>
-					<td>
-						<div class="box txtEm txt16">
-							<strong class="txt23">= </strong><strong><span
-								class="txt23">18,000원</span></strong><span class="txt14 displaynone"></span>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<a href="#none" class="close"
-			onclick="OrderLayer.offDiv('order_layer_benefit');"><img
-			src="https://cdn-jull.bizhost.kr/jullweb20190218/skin/base/common/btn_close.gif"
-			alt="닫기" /></a>
-	</div>
 	</div>
 	<!-- footer구역 -->
 	<footer class="container-fluid navbar-fixed-bottom">

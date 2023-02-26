@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .font-face {
 	font-family: 'S-CoreDream-3Light';
 	src:
@@ -8,11 +9,11 @@
 	font-style: normal;
 }
 
-.body {
+.cancle_order_boay {
 	font-family: 'S-CoreDream-3Light';
 }
 
-.cancel_order_leftbar {
+.cancle_order_leftbar {
 	width: 310px;
 	position: fixed;
 	left: 0;
@@ -25,7 +26,7 @@
 	height: 100%;
 }
 
-.cancel_order_footer {
+.cancle_order_footer {
 	bottom: 0;
 	background-color: #f4efe1;
 	text-align: center;
@@ -33,24 +34,21 @@
 	padding-left: 90px;
 	margin: 0 auto;
 	position: absolute;
+		position: fixed;
 }
 
-.cancel_order_contents {
-	margin-left: 750px;
-}
-
-.cancel_order_ec-base-box {
+.cancle_order_base-box {
 	width: 1080px;
 	height: 60px;
 	font-size: 20px;
+	margin-left: 0;
+}
+
+.cancle_order_title {
 	margin-left: 460px;
 }
 
-.cancel_order_title {
-	margin-left: 460px;
-}
-
-.cancel_order_typeList {
+.cancle_order_typeList {
 	margin-left: 450px;
 	padding: 10px;
 	text-align: center;
