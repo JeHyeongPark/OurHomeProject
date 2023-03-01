@@ -10,20 +10,19 @@
 
 </head>
 <body>
-
-<div id="leftbar">
+<div id="findPost_leftbar">
   <div class=""><a href="#">쇼핑몰</a></div>
 </div>  
 
-<div id="contents">
-  <div id="header">
+<div id="findPost_contents">
+  <div id="findPost_header">
     <h4 class="text-center">게시물찾기</h4><p>
 	<h6 class="text-center">게시물찾기</h6>
 	<hr>
   </div>
 
 
-<div class="main">
+<div class="findPost_main">
   <table class="table">
 			<thead>
 				<tr>
@@ -60,7 +59,7 @@
 
 
 
-<div class="paging">
+<div class="findPost_paging">
   <ul>
     <li><a href="#"><</a></li> 
     <li><a href="#">1</a></li> 
@@ -74,8 +73,8 @@
 
 
 <!-- 검색구역 -->
-  <form id="boardSearchForm">
-  <div class="bottomsearch">
+  <form id="findPost_boardSearchForm">
+  <div class="findPost_bottomsearch">
         분류선택 &nbsp;
         <select id="search_key" name="search_key">
           <option value="all">전체</option>
@@ -97,10 +96,13 @@
 
 
 <!-- footer구역 -->
-	<footer class="container-fluid navbar-fixed-bottom">
-		<div class="footer">footer구역</div>
+	<footer class="findPost_footer">
+		<div class="findPost_footerdiv" >
+			상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구<p>
+				사업자번호 xxx-xx-xxxxx<p>
+ 				이메일 | 교환,반품 주소지<p>			
+		</div>
 	</footer>
-
 
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 

@@ -12,27 +12,27 @@
 </head>
 <body>
 
-<div id="leftbar">
+<div id="postView_leftbar">
   <div class=""><a href="#">쇼핑몰</a></div>
 </div>  
 
-<div id="contents">
+<div id="postView_contents">
 
-  <div id="header">
+  <div id="postView_header">
     <h4 class="text-center">FAQ</h4><p>     <!-- 게시판마다 이름 바껴야됨  -->
 	<h6 class="text-center">자주묻는질문</h6>
 	<hr>
   </div>
   
 
-<div class="buttonarea">
+<div class="postView_buttonarea">
  <button><a href="#">삭제</a></button>
  <button><a href="#">수정</a></button>
  <button><a href="#">글 목록</a></button>
 </div>
 
 <div>
-  <table class="posttable">
+  <table class="postView_posttable">
    <tr>
     <th>제목</th>
     <td  colspan="2">게시글의 제목</td>
@@ -53,8 +53,8 @@
 
 <p>
 
-<div class="movetablearea">
-<table class="movetable">
+<div class="postView_movetablearea">
+<table class="postView_movetable">
   <tr>
       <th>이전</th>
       <td>이전 글 제목</td>
@@ -66,12 +66,16 @@
 </table>
 </div>
 
-
+</div>	
 
 
 <!-- footer구역 -->
-	<footer class="container-fluid navbar-fixed-bottom">
-		<div class="footer">footer구역</div>
+	<footer class="postView_footer">
+		<div class="postView_footerdiv" >
+			상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구<p>
+				사업자번호 xxx-xx-xxxxx<p>
+ 				이메일 | 교환,반품 주소지<p>			
+		</div>
 	</footer>
 	
 
