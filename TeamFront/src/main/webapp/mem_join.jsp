@@ -35,6 +35,11 @@ $(function(){
  })
 
 </script>
+<style>
+ table td{
+  padding-left:10px
+  }
+</style>
 </head>
 <body>
  <div id="leftbar">
@@ -68,7 +73,7 @@ $(function(){
        <td><input type="password" name="mem_pwd"></td>
       </tr>
       <tr>
-       <td width="120px">비밀번호 확인</td>
+       <td style="padding-left:10px" width="120px">비밀번호 확인</td>
        <td><span class="pwu_pop" title="※ 비밀번호 입력 조건 
   - 영소문자 / 숫자 / 특수기호 3가지 포함 8자~16자
   - 입력가능 특수문자 [ ~, !, @, #, $, ^, -, _ ] 
@@ -107,9 +112,10 @@ $(function(){
      </table>
      <p>
      <hr>
+     
      <!-- 이용약관 -->
      <div id="mem_agree" align="center">
-     <h2>회원 동의 약관</h2>
+     <h2><b>회원 동의 약관</b></h2>
      <textarea cols="120" rows="20" name="agree">
 	 제 1 조 (약관의 적용)
 	 인터넷 서비스(이하"서비스"라 합니다)의 이용에는 기본 이용약관(이하"기본약관"이라 합니다)과 이 약관을 함께 적용합니다
@@ -205,24 +211,23 @@ $(function(){
       	
  	<hr>
      <div>
-       <button id="join_end" onclick="joinpop()">회원가입</button>
-       <a href="login.jsp"><button id="close">닫기</button></a>
+       <button id="join_end_btn" onclick="joinpop()">회원가입</button>
+       <a href="login.jsp"><button id="join_close_btn">닫기</button></a>
      </div>
     </div><!-- middle -->
-  </div> <!-- main -->
+  </div> <!-- main --> 
+ </div><!-- contents -->
    
   <!-- footer -->
-  <footer >
-      <div class="footer" ><!--   -->
+<footer>
+ <div class="footer" align="center"><!--   -->
          상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구<p>
             사업자번호 xxx-xx-xxxxx<p>
              이메일 | 교환,반품 주소지<p>
          
-      </div>
-   </footer>
+  </div>
+</footer>
 
- </div>	 <!-- contents -->
- 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
 

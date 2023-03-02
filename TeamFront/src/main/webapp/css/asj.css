@@ -12,7 +12,6 @@ body{
 html, body {
     height: 100%
 }
-
 #leftbar{
 	width:310px;
 	position:fixed;
@@ -25,14 +24,12 @@ html, body {
 	background-color:beige;
 	height:100%;
 }
-
 #contents{
-   padding:0% 5% 30% 5%;
+   padding:0% 5% 15% 5%;
    margin-left:310px;
 }
-
 .footer {      
-	bottom: 0;
+   bottom: 0;
    padding-top:3%;
    background-color: #f4efe1;
    text-align:center;
@@ -52,21 +49,9 @@ html, body {
 }
 
 #logfm{
-	margin-top:70px;	
+	margin-top:130px;	
 }
 
-#log_id input{
-	background-image:url("./icon/id.png");
-	background-position:1px center;
-	background-size:16px;
-	background-repeat:no-repeat;
-}
-#log_pwd input{
-	background-image:url("./icon/pwd.png");
-	background-position: 1px center;
-	background-size:16px;
-	background-repeat:no-repeat
-}
 #mem_id, 
 #mem_pwd{
     margin-right:20px;
@@ -80,12 +65,12 @@ html, body {
         border-radius:5px;
         cursor:pointer
 }
-.login_a {
+#login_a {
    text-decoration:none;
    font-size: 1.1em;
    color:rgb(68, 68, 68);
   }		
-  
+
 /*id_find*/
 #id_find_img{
 	float:left;
@@ -219,27 +204,31 @@ html, body {
 #idbtn, #zipbtn {
 	margin-left:10px;
 }
+#mem_agree{
+	margin-top:30px;
+}
 #agree{
 	float:left;
 	margin-top:20px;
-	margin-left:170px
+	margin-left:500px
 }
 #disagree{
 	float:right;
 	margin-top:20px;
-	margin-right:170px
+	margin-right:50px
 }
 
-#join_end{
+#join_end_btn{
 	float:left;
-	margin-top:20px;
-	margin-left:280px;
+	margin-top:40px;
+	margin-left:140px;
 }
-#close{
-	position:relative;
-	margin-top:20px;
-	margin-left:10px
+#join_close_btn{
+	float:left;
+	margin-top:40px;
+	margin-left:170px
 }
+
 
 /*mem_info*/
 #mem_info_img{
@@ -254,25 +243,23 @@ html, body {
 	height:350px;
 	margin-top:70px;
 }
-
 #zipbtn {
 	margin-left:10px;
 }
-#update{
+#update_btn{
 	float:left;
 	margin-top:20px;
-	margin-left:155px;
+	margin-left:20px;
 }
-
-#close{
+#mem_info_close_btn{
 	position:relative;
 	margin-top:20px;
+	margin-left:10px
 }
-
-#delete_mem{
+#delete_mem_btn{
 	float:right;
 	margin-top:20px;
-	margin-right:300px;
+	margin-right:20px;
 }
 
 /*delcheck, admin_delcheck*/
@@ -294,7 +281,7 @@ html, body {
 #tab1, #tab2, #tab3, #tab4{
 	margin-top:40px;
 	width:100%;	
-	text-align:center
+	padding-left:50px;
 }
 #admin_page_tr{
 	background-color:#eeeeee;
@@ -307,13 +294,18 @@ html, body {
 	float:right;
 	margin-top:40px;
 }
-#item_upload{
+.item_upload{
 	float:left;
 	margin-top:20px;
 }
-#item_soldout{
+.item_soldout{
 	float:right;
 	margin-top:20px;
+}
+.item_sale{
+	float:right;
+	margin-top:20px;
+	margin-right:15px;
 }
 
 /*admin_info*/
@@ -328,20 +320,20 @@ html, body {
 	width:900px;
 	height:350px;
 	margin-top:70px;
+	padding-left:30px;
 }
 
 #zipbtn, #pwd_reset{
 	margin-left:10px;
 }
-
-#close{
+.admin_info_close{
 	float:left;
 	margin-top:20px;
-	margin-left:155px;
+	margin-left:20px;
 }
 
-#delete_mem{
+.admin_delete_mem{
 	float:right;
 	margin-top:20px;
-	margin-right:155px;
+	margin-right:20px;
 }

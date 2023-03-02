@@ -25,7 +25,7 @@ $(function(){
   })
 })
 
-<!-- 탭 클릭 시 스크롤 자동 이동을 방지하는 함수-->
+<!-- 탭 클릭 시 스크롤 자동 이동을 방지-->
 $(function(){
  $("a").click(function(e){
    e.preventDefault();
@@ -60,29 +60,29 @@ $(function(){
 	  <!-- 회원정보 -->
 	  <div id="1tab">
 	   <table id="tab1" border="1px solid black" >
-	    <tr id="admin_page_tr">
-	     <th width="13%" height="30px">이름</th>
-	     <th width="15%">아이디</th>
-	     <th width="30%">주소</th>
-	     <th width="15%">전화번호</th>
-	     <th width="15%">이메일</th>
-	     <th width="7%">수정여부</th>
+	    <tr id="admin_page_tr" height="30px">
+	     <th width="13%" class="text-center">이름</th>
+	     <th width="15%" class="text-center">아이디</th>
+	     <th width="30%" class="text-center">주소</th>
+	     <th width="15%" class="text-center">전화번호</th>
+	     <th width="15%" class="text-center">이메일</th>
+	     <th width="7%" class="text-center">정보 수정</th>
 	    </tr>
-	    <tr>
-	     <td height="40px">김어쩌구</td>
-	     <td>abc</td>
-	     <td>서울시 강남구</td>
-	     <td>02345</td>
-	     <td>aaa@</td>
-	     <td><a href="admin_info.jsp"><button id="mem_up">수정</button></a></td>
+	    <tr height="40px">
+	     <td class="text-center">김어쩌구</td>
+	     <td class="text-center">abc</td>
+	     <td style="padding-left:10px">서울시 강남구</td>
+	     <td class="text-center">02345</td>
+	     <td class="text-center">aaa@</td>
+	     <td><center><a href="admin_info.jsp"><button id="mem_up">수정</button></a></center></td>
 	    </tr>
-	    <tr>
-	     <td>김회원</td>
-	     <td>ddd</td>
-	     <td>경기도 </td>
-	     <td>012-345</td>
-	     <td>vvb@</td>
-	     <td><a href="admin_info.jsp"><button id="mem_up"">수정</button></a></td>
+	    <tr height="40px">
+	     <td class="text-center">김회원</td>
+	     <td class="text-center">ddd</td>
+	     <td style="padding-left:10px">경기도 </td>
+	     <td class="text-center">012-345</td>
+	     <td class="text-center">vvb@</td>
+	     <td><center><a href="admin_info.jsp"><button id="mem_up"">수정</button></a></center></td>
 	    </tr>
 	   </table>
 	   <form name="search" id="search" action="./admin_page.jsp">
@@ -102,19 +102,20 @@ $(function(){
 	  <div id="2tab" >
 	   <table id="tab2" border="1px solid black">
 	    <tr id="admin_page_tr" height="30px">
-	     <th width="13%" height="30px"  text-align="center">아이디</th>
-	     <th width="13%">주문 날짜</th>
-	     <th width="13%">주문 번호</th>
-	     <th width="33%">상품명</th>
-	     <th width="13%">상태 변경하기</th>
-	     <th width="15%">주문상태</th>
+	     <th width="13%" class="text-center">아이디</th>
+	     <th width="10%" class="text-center">주문 날짜</th>
+	     <th width="13%" class="text-center">주문 번호</th>
+	     <th width="25%" class="text-center">상품명</th>
+	     <th width="13%" class="text-center">상태 변경</th>
+	     <th width="17%" class="text-center">주문처리상태</th>
+	     <th width="9%" class="text-center">주문 결과</th>
 	    </tr>
-	    <tr>
+	    <tr height="40px" class="text-center">
 	     <td height="40px">아이디 입니다.</td>
 	     <td>2023-02-25</td>
 	     <td>20230225-00012</td>
-	     <td>알록달록</td>
-	     <td> 
+	     <td class="text-left" style="padding-left:10px">알록달록</td>
+	     <td>
 	       <select name="search">
          	<option value="item_num">반품</option>
       	 	<option value="iten_name">취소</option>
@@ -122,10 +123,19 @@ $(function(){
    		   </select> &nbsp;
    		   <button id="tab2_btn">처리</button>
 	     </td>
-	     <td>배송완료</td>
+	     <td><center> 
+	       <select name="search">
+	        <option value="choose" selected>선택하세요</option>
+         	<option value="payment_check">입금확인 중</option>
+      	 	<option value="delivery_ready">배송준비 중</option>
+      	 	<option value="delivery">배송중</option>
+      	 	<option value="complete">배송완료</option>
+   		   </select> &nbsp;
+   		   <button id="tab2_btn">처리</button></center>
+	     </td>
+	     <td>취소</td>
 	    </tr>
 	   </table>
-	   
 	   <form name="search" id="search" action="/TeamFront/admin_page.do">
         <select name="search">        
       	 <option value="mem_addr">아이디</option>
@@ -141,35 +151,35 @@ $(function(){
 	  <!-- 적립금 -->
 	  <div id="3tab">
 	   <table id="tab3" border="1px solid black">
-	    <tr id="admin_page_tr">
-	     <th width="13%" height="40px">아이디</th>
-	     <th width="13%">적립 날짜</th>
-	     <th width="30%">적립 내역</th>
-	     <th width="13%">적립</th>
-	     <th width="13%">사용</th>
-	     <th width="18%">총 적립금</th>
+	    <tr id="admin_page_tr" height="30px">
+	     <th width="13%" class="text-center">아이디</th>
+	     <th width="13%" class="text-center">적립 날짜</th>
+	     <th width="30%" class="text-center">적립 내역</th>
+	     <th width="13%" class="text-center">적립</th>
+	     <th width="13%" class="text-center">사용</th>
+	     <th width="18%" class="text-center">총 적립금</th>
 	    </tr>
-	    <tr>
-	     <td height="40px">abc</td>
+	    <tr height="40px" class="text-center">
+	     <td>abc</td>
 	     <td>2023-02-25</td>
-	     <td>로그인</td>
+	     <td class="text-left" style="padding-left:10px" >로그인</td>
 	     <td><font color="red">+100</font></td>
-	     <td><font color="blue">-000</font></td>
+	     <td><font color="blue">0</font></td>
 	     <td><b>100</b></td>
 	    </tr>
-	    <tr>
+	    <tr height="40px" class="text-center">
 	     <td>qwe</td>
 	     <td>2023-02-25</td>
-	     <td>리뷰작성</td>
+	     <td class="text-left" style="padding-left:10px">리뷰작성</td>
 	     <td><font color="red">+300</font></td>
-	     <td><font color="blue">-000</font></td>
+	     <td><font color="blue">0</font></td>
 	     <td><b>3300</b></td>
 	    </tr>
-	    <tr>
+	    <tr height="40px" class="text-center">
 	     <td>ytr</td>
 	     <td>2023-02-23</td>
-	     <td>상품구매</td>
-	     <td><font color="red">+000</font></td>
+	     <td class="text-left" style="padding-left:10px">상품구매 (20230225-000012)</td>
+	     <td><font color="red">0</font></td>
 	     <td><font color="blue">-1600</font></td>
 	     <td><b>4000</b></td>
 	    </tr>
@@ -186,25 +196,44 @@ $(function(){
 	  <!-- 상품관리 -->
 	  <div id="4tab">
 	   <table id="tab4" border="1px solid black">
-	    <tr id="admin_page_tr">
-	     <th colspan=2 width="60%" height="30px">상품명</th>
-	     <th width="10%">상품 수정</th>
-	     <th width="10%">상품 삭제</th>
-	     <th width="10%">상품 재고</th>
-	     <th width="10%">품절 처리</th>
+	    <tr id="admin_page_tr" height="30px" >
+	     <th width="3%" class="text-center"><input type="checkbox" name="soldout"></th>
+	     <th colspan=2 width="59%" class="text-center">상품명</th>
+	     <th width="9%" class="text-center">상품 수정</th>
+	     <th width="9%" class="text-center">상품 삭제</th>
+	     <th width="9%" class="text-center">상품 재고</th>
+	     <th width="11%" class="text-center">품절 처리</th>
 	    </tr>
-	    <tr id="admin_page_tr2">
+	    <tr id="admin_page_tr2" class="text-center">
+	     <td width=><input type="checkbox" name="soldout_2"></td>
 	     <td width="15%" height="90px">상품사진</td>
-	     <td width="45%">상품명</td>
+	     <td width="45%"  class="text-left" style="padding-left:10px">화이트 머쉬룸 조명</td>
 	     <!-- 수정 : 클릭 시 페이지 이동
 	      	  삭제 : alert창? 팝업창?
 	      	  품절 : 버튼 클릭 시 해당 제품 품절 뜨도록 function??
 	      -->
-	     <td><a href="#"><button id="insert" width="10%">수정</button></a></td>
-	     <td><button id="delete" width="10%" onclick="alert('정말 삭제하시겠습니까?')">삭제</button></a></td>
-	     <td width="10%">30개</td>
-	     <td width="10%"><input type="checkbox" name="soldout">
-	                    <button id="item_soldout_btn">품절</button></a>
+	     <td><center><a href="#"><button id="insert" width="10%">수정</button></a></center></td>
+	     <td><center><button id="delete" width="10%" onclick="alert('정말 삭제하시겠습니까?')">삭제</button></center></td>
+	     <td>30개</td>
+	     <td><center><input type="checkbox" name="soldout">
+	                    <button id="item_soldout_btn">품절</button> <p><p>
+	                    <button id="item_sale_btn">재 판매</button></center>
+	     </td>
+	    </tr>
+	    <tr id="admin_page_tr2" class="text-center">
+	     <td width=><input type="checkbox" name="soldout_2"></td>
+	     <td width="15%" height="90px">상품사진</td>
+	     <td width="45%"  class="text-left" style="padding-left:10px">자연의 바람</td>
+	     <!-- 수정 : 클릭 시 페이지 이동
+	      	  삭제 : alert창? 팝업창?
+	      	  품절 : 버튼 클릭 시 해당 제품 품절 뜨도록 function??
+	      -->
+	     <td><center><a href="#"><button id="insert" width="10%">수정</button></a></center></td>
+	     <td><center><button id="delete" width="10%" onclick="alert('정말 삭제하시겠습니까?')">삭제</button></center></td>
+	     <td>10개</td>
+	     <td><center><input type="checkbox" name="soldout">
+	                 <button id="item_soldout_btn">품절</button> <p><p>
+	                 <button id="item_sale_btn">재 판매</button></center>
 	     </td>
 	    </tr>
 	   </table>
@@ -212,11 +241,14 @@ $(function(){
 	   		상품 추가 : 추가 페이지 이동
 	   		품절 처리 : 버튼 클릭 시 해당 제품 품절 뜨도록 function??
 	   -->
-	   <a href="#"><button id="item_upload">상품 추가</button></a>
-	   <a href="#"><button id="item_soldout">품절 처리</button></a>
+	   <a href="#"><button class="item_upload">상품 추가</button></a>
+	   <a href="#"><button class="item_soldout">품절 처리</button></a>
+	   <a href="#"><button class="item_sale">재 판매</button></a>
 	  </div>
 	</div> <!-- panel -->
-	
+   </div><!-- contents -->
+	  
+	  
 	<!-- footer -->
     <footer >
       <div class="footer" ><!--   -->
@@ -229,9 +261,7 @@ $(function(){
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
 <script src="./js/bootstrap.min.js"></script>
 
-  </div><!-- contents -->
 </body>
 </html>

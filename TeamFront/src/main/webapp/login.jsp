@@ -12,7 +12,18 @@
 
 <title>::로그인::</title>
 <style>
-
+#log_id input{
+	background-image:url("./icon/id.png");
+	background-position:1px center;
+	background-size:16px;
+	background-repeat:no-repeat;
+}
+#log_pwd input{
+	background-image:url("./icon/pwd.png");
+	background-position: 1px center;
+	background-size:16px;
+	background-repeat:no-repeat
+}
 </style>
 </head>
 <body>
@@ -55,6 +66,7 @@
      </form>
      </div><!-- 메인 -->
      
+     </div><!-- contents -->
    	<!-- footer -->
     <footer >
       <div class="footer" ><!--   -->
@@ -64,9 +76,9 @@
          
       </div>
    </footer>
+     
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    <script src="./js/bootstrap.min.js"></script>
 
-  </div><!-- contents -->
 </body>
 </html>

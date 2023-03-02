@@ -27,9 +27,12 @@ $(function(){
 	})
   })
 })
-
-
 </script>
+<style>
+ table td{
+  padding-left:10px
+  }
+</style>
 </head>
 <body>
  <div id="leftbar">
@@ -70,7 +73,7 @@ $(function(){
         <td width="120px">주소</td>
         <td><input type="text" name="mem_zipcode">
             <button id="zipbtn">우편번호 검색</button><p><p>
-            <input type="text" name="mem_addr1">  
+            <input type="text" name="mem_addr1"> &nbsp;  
             <input type="text" name="mem_addr2" width="70px" placeholder="추가 주소를 입력하세요">
         </td>
       </tr>
@@ -95,12 +98,13 @@ $(function(){
       </tr>
      </table>
      <div>  
-       <button id="update" onclick="update()">수정 완료</button>
-       <a href="login.jsp"><button id="close">취소</button></a>
-       <button id="delete_mem" onclick="delpop()">회원 탈퇴하기</button>
+       <button id="update_btn" onclick="update()">수정 완료</button>
+       <a href="login.jsp"><button id="mem_info_close_btn">취소</button></a>
+       <button id="delete_mem_btn" onclick="delpop()">회원 탈퇴하기</button>
      </div>
     </div><!-- middle -->
   </div><!-- main -->
+ </div>	 <!-- content -->
   
   <!-- footer -->
   <footer >
@@ -111,7 +115,6 @@ $(function(){
          
       </div>
    </footer>
- </div>	 <!-- content -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
 

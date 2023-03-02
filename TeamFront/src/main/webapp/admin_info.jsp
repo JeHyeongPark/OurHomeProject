@@ -4,11 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="join.js?ver=1"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/asj.css" rel="stylesheet">
-<meta charset="UTF-8">
+
 <title>::회원정보 관리::</title>
 <script>
 $(function(){
@@ -24,9 +26,12 @@ $(function(){
 	})
   })
 })
-
-
 </script>
+<style>
+ table td{
+  padding-left:10px
+  }
+</style>
 </head>
 <body>
  <div id="leftbar">
@@ -42,7 +47,7 @@ $(function(){
     </div>
     
     <div class="middle">
-     <table id="admin_info_tb" align="center" border="2px solid gray">
+     <table id="admin_info_tb" align="center" style="padding-left:10px" border="2px solid gray">
       <tr>
         <td width="120px">이름</td>
         <td><input type="text" name="mem_name" disabled></td>
@@ -62,8 +67,8 @@ $(function(){
         <td width="120px">주소</td>
         <td><input type="text" name="mem_zipcode">
             <button id="zipbtn">우편번호 검색</button><p><p>
-            <input type="text" name="mem_addr1">  
-            <input type="text" name="mem_addr2" width="40px" placeholder="추가 주소를 입력하세요">
+            <input type="text" name="mem_addr1"> &nbsp;
+            <input type="text" name="mem_addr2" width="100px" placeholder="추가 주소를 입력하세요">
         </td>
       </tr>
       <tr>
@@ -87,12 +92,13 @@ $(function(){
       </tr>
      </table>
      <div>  
-       <button id="close" onclick="histroy.back()">취소</button>
-       <button id="delete_mem" onclick="admin_delpop()">탈퇴 처리하기</button>
+       <button class="admin_info_close" onclick="histroy.back()">취소</button>
+       <button class="admin_delete_mem" onclick="admin_delpop()">탈퇴 처리하기</button>
      </div>
     </div><!-- middle -->
   </div><!-- main -->
   
+ </div>	 <!-- content -->
   <!-- footer -->
   <footer >
       <div class="footer" ><!--   -->
@@ -102,7 +108,6 @@ $(function(){
          
       </div>
    </footer>
- </div>	 <!-- content -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
 
