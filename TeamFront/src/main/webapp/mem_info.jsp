@@ -13,7 +13,7 @@
 <link href="./css/asj.css" rel="stylesheet">
 
 <title>::회원정보 수정::</title>
-<script>
+<script>  
 $(function(){
   $('#email_sel').change(function(){
 	$("#email_sel option:selected").each(function(){
