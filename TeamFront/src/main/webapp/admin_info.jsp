@@ -28,9 +28,9 @@ $(function(){
 })
 </script>
 <style>
- table td{
+table td{
   padding-left:10px
-  }
+}
 </style>
 </head>
 <body>

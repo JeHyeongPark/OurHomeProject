@@ -21,7 +21,7 @@ $(function(){
 	  }
 	})
   })
- })
+ })  
  /* 여기부터 기능 구현 시 수정 예정*/
   $(function(){
     $('#phbtn').click(function(){

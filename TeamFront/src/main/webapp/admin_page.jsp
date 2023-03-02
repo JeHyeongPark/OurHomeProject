@@ -24,7 +24,7 @@ $(function(){
 	  $($(this).attr("href")).show(); //$('#tab2').show() : id가 tab2인 태그
   })
 })
-
+ 
 <!-- 탭 클릭 시 스크롤 자동 이동을 방지-->
 $(function(){
  $("a").click(function(e){
