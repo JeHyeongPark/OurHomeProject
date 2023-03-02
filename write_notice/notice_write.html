@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./frame.css?after" rel="stylesheet">
+    <link href="./write.css?after" rel="stylesheet">
+    
+    <script type="text/javascript"
+			src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="row">
+	<div class="sidebar">
+		사이드바
+		<!-- 사이드바 -->
+		<ul class="nav">
+			<li>회원가입</li>
+			<li>회원로그인</li>
+			<li>게시판</li>
+			<li>설문조사</li>
+		</ul>
+	</div>
+	
+	<div class="main">     
+			<h1>게시판 글쓰기</h1>
+		    <!-- <%-- 입력 폼 -->
+			<form action="writerAction" method="post">
+				<input type="hidden" name="bdGroup" value="">
+				<input type="hidden" name="bdOrder" value="">
+				<input type="hidden" name="bdIndent" value="">
+				<input type="text" name="bdTitle" class="form-control mt-4 mb-2"
+					placeholder="제목을 입력해주세요." required>
+				<div class="form-group">
+					<textarea class="form-control" rows="10" name="bdContent" cols="80%"
+						placeholder="내용을 입력해주세요" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-secondary mb-3">목록</button>
+				<button type="submit" class="btn btn-secondary mb-3 pull-right write_cancel">취소</button>
+				<button type="submit" class="btn btn-secondary mb-3 pull-right write_reg">등록</button>
+			</form>
+	    	</div><!-- main -->
+
+
+
+	<footer class="container-fluid navbar-fixed-bottom">
+		<div class="footer">footer구역</div>
+	</footer>
+    
+    </div>
+    
+	
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
