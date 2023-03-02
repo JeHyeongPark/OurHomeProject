@@ -32,7 +32,7 @@ function memdel(){
 	alert ('회원 탈퇴가 완료되었습니다.');
 	 window.location.href = "login.jsp";
 }
-
+  
 //관리자가 회원 탈퇴하기 클릭 시
 function anmin_delpop(){
 	var url="admin_delcheck.html"

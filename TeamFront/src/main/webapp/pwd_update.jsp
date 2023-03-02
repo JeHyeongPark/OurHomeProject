@@ -16,7 +16,7 @@
     $('#pwdbtn').click(function(){
 	  alert('비밀번호 재설정 준비 중');
     })
-  })   
+  })     
    
 </script>
 </head>

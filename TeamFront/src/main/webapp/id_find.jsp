@@ -19,7 +19,7 @@ $(function(){
 		 $('#email2').val($(this).text()); //선택값 입력
 		 $('#email2').attr("disabled",true); //#email2 비활성화
 	  }
-	})  
+	})    
   })
  })  
  /* 여기부터 기능 구현 시 수정 예정*/
