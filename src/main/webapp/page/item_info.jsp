@@ -10,6 +10,7 @@
 <link href="../css/ssj.css" rel="stylesheet">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<% int Book_count=0; %>
 </head>
 <body>
 <div id="leftbar">
@@ -44,7 +45,7 @@
 					</div>
 					<p>
 					<div>
-					
+					 <% if(Book_count ==0) {%> 
 						<ul class="itmeinfo_ul">
 							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
 									<div>
@@ -55,7 +56,8 @@
 									</div>
 									<div>
 										<strong>고아 골든 디저트포크</strong> <!-- 상품제목글 -->
-										<p>블랙 / 핑크 외 8가지 중 선택 1</p>
+										<p>블랙 / 핑크 외 8가지 중 선택 1 <font color="red"><%="일시품절"%></font> </p>
+         								
 									</div> <!-- 상품설명글 -->
 							</a></li>
 							<li class="iteminfo_imgline"><a class="iteminfo_info" href="#">
@@ -123,6 +125,7 @@
 							</a></li>
 						</ul>
 					</div>
+					<%} %>
 				</div>
 				<div class="page" >
 					<a href="#" aria-hidden="true" role="button">이전</a>

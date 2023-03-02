@@ -9,6 +9,7 @@
 <link href="../css/ssj.css" rel="stylesheet">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<% int Book_count=0; %>
 </script>
 </head>
 <body>
@@ -44,6 +45,7 @@
 					</div>
 					<p>
 						<table class="table  table-hover ">
+						 <% if(Book_count ==0) {%> 
 						<colgroup>
 				            <col width=15%>
 				            <col width=70%>
@@ -56,8 +58,9 @@
 							</tr>
 							<tr class="text-center">
 								<div>
+								
 								<td><a href="#" class="itemSerch_imgline"><img class="itemSerch_img" src="../img/cup1.avif"></a></td></div>
-								<td >고아 골든 디저트포크 <!-- 상품제목글 -->
+								<td >고아 골든 디저트포크 <font color="red"><%="일시품절"%></font> <!-- 상품제목글 -->
 								<p>블랙 / 핑크 외 8가지 중 선택 1</p></td>
 								<td>별점</td>
 							</tr>
@@ -97,8 +100,9 @@
 								<td>별점</td>
 							</tr>
 						</table>
+						<%} %>
 				</div>
-				<div class="justify-content-center" >
+				<div class="page" >
 					<a href="#" aria-hidden="true" role="button">이전</a>
 					<a href="#" aria-current="true" role="menuitem">1</a>
 					<a href="#" aria-hidden="true" role="button">다음</a>
