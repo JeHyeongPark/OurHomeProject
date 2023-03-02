@@ -74,7 +74,7 @@
 		<p>
 		<hr>
 		<!-- 게시글 영역 -->
-		<button button class="btn btn-primary btn-sm" onclick="location.href='페이지경로' ">글쓰기</button><p>
+		<button button class="btn btn-primary btn-xl" onclick="location.href='페이지경로' ">글쓰기</button><p>
 		<!-- onclick="location.href='' " => 해당경로페이지로 이동 | onclick = "window.open('새창으로 띄울 경로') => 새창으로 열기 | 
 					onclick = "window.open('https://naver.com', 'window_name', 'width=430, height=500, location=no, status=no, scrollbars=yes');" => 팝업으로 열기-->
 			<div>
@@ -123,6 +123,11 @@
 					</tr>
 				</table>
 			</div>
+			<div class="page" >
+					<a href="#" aria-hidden="true" role="button">이전</a>
+					<a href="#" aria-current="true" role="menuitem">1</a>
+					<a href="#" aria-hidden="true" role="button">다음</a>
+				</div>
 
 	<footer class="container-fluid navbar-fixed-bottom post_footer">
 			<div>footer구역</div>

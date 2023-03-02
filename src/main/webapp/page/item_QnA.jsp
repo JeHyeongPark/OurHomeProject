@@ -76,6 +76,11 @@
 				</table>
 			</div>
 		</div>
+		<div class="page" >
+					<a href="#" aria-hidden="true" role="button">이전</a>
+					<a href="#" aria-current="true" role="menuitem">1</a>
+					<a href="#" aria-hidden="true" role="button">다음</a>
+				</div>
 
 		<footer class="container-fluid navbar-fixed-bottom post_footer">
 			<div>footer구역</div>
