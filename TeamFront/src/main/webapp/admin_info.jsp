@@ -75,7 +75,7 @@ table td{
         <td width="120px">핸드폰 번호</td>
         <td><input type="text" name="mem_phone"></td>
       </tr>
-      <tr>
+      <tr> 
         <td width="120px">이메일</td>
         <td><input type="text" name="mem_email" size="13"> @
             <input type="text" name="mem_email2" id="email2" size="13">
