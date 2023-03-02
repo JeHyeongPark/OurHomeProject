@@ -12,7 +12,7 @@
 <link href="./css/asj.css" rel="stylesheet">
 
 <title>::회원가입::</title>
-<script>  
+<script>    
 /*  
   - 영소문자 / 숫자 / 특수기호 3가지 포함 8자~16자
   - 입력가능 특수문자 [ ~, !, @, #, $, ^, -, _ ] 

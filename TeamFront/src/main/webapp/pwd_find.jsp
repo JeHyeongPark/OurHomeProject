@@ -11,7 +11,7 @@
 <link href="./css/asj.css" rel="stylesheet">
 
 <title>::비밀번호 찾기::</title>
-</head>
+</head>  
 <body>
  <div id="leftbar">
   <div class=""><a href="#">쇼핑몰</a></div>

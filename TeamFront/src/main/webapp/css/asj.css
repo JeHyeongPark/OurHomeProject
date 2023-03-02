@@ -230,6 +230,14 @@ html, body {
 	margin-left:170px
 }
 
+/*join_pop*/
+#join_pop_img {
+	padding-top:20px;
+}
+#join_pop_body{  
+	background-color: #f9f9f9
+}
+
 
 /*mem_info*/
 #mem_info_img{

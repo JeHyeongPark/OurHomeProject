@@ -13,7 +13,7 @@ function close(){
 }
 
 //회원정보 수정
-function update(){
+function update(){  
 	alert ('회원정보 수정이 완료되었습니다.');
 	 window.location.href = "login.jsp";
 }     
