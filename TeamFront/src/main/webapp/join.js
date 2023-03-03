@@ -11,7 +11,7 @@ function close(){
    window.open.close();
     window.location.href = "login.jsp";
 }
-
+ 
 //회원정보 수정
 function update(){  
 	alert ('회원정보 수정이 완료되었습니다.');

@@ -12,7 +12,7 @@
 
 <title>::비밀번호 찾기::</title>
 </head>  
-<body>
+<body> 
  <div id="leftbar">
   <div class=""><a href="#">쇼핑몰</a></div>
  </div>  

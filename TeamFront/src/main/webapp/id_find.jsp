@@ -8,7 +8,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/asj.css" rel="stylesheet">
-<script>
+<script> 
 $(function(){
   $('#email_sel').change(function(){
 	$("#email_sel option:selected").each(function(){
