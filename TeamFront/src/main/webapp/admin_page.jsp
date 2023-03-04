@@ -32,6 +32,22 @@ $(function(){
    e.stopPropagation();
  })
 }) 
+
+<!-- 체크박스 -->
+$(document).ready(function() {
+	$("#soldout_chk").click(function() {
+		if($("#soldout_chk").is(":checked")) $("input[name=soldout]").prop("checked", true);
+		else $("input[name=soldout]").prop("checked", false);
+	});
+	
+	$("input[name=soldout]").click(function() {
+		var total = $("input[name=soldout]").length;
+		var checked = $("input[name=soldout]:checked").length;
+		
+		if(total!=checked) $("#soldout_chk").prop("checked", false);
+		else $("#soldout_chk").prop("checked", true); 
+	});
+});
   </script>
   <!-- 부트스트랩 -->
 </head>
@@ -197,7 +213,7 @@ $(function(){
 	  <div id="4tab">
 	   <table id="tab4" border="1px solid black">
 	    <tr id="admin_page_tr" height="30px" >
-	     <th width="3%" class="text-center"><input type="checkbox" name="soldout"></th>
+	     <th width="3%" class="text-center"><input type="checkbox" id="soldout_chk"></th>
 	     <th colspan=2 width="59%" class="text-center">상품명</th>
 	     <th width="9%" class="text-center">상품 수정</th>
 	     <th width="9%" class="text-center">상품 삭제</th>
@@ -205,7 +221,7 @@ $(function(){
 	     <th width="11%" class="text-center">품절 처리</th>
 	    </tr>
 	    <tr id="admin_page_tr2" class="text-center">
-	     <td width=><input type="checkbox" name="soldout_2"></td>
+	     <td width=><input type="checkbox" name="soldout"></td>
 	     <td width="15%" height="90px">상품사진</td>
 	     <td width="45%"  class="text-left" style="padding-left:10px">화이트 머쉬룸 조명</td>
 	     <!-- 수정 : 클릭 시 페이지 이동
@@ -215,13 +231,12 @@ $(function(){
 	     <td><center><a href="#"><button id="insert" width="10%">수정</button></a></center></td>
 	     <td><center><button id="delete" width="10%" onclick="alert('정말 삭제하시겠습니까?')">삭제</button></center></td>
 	     <td>30개</td>
-	     <td><center><input type="checkbox" name="soldout">
-	                    <button id="item_soldout_btn">품절</button> <p><p>
-	                    <button id="item_sale_btn">재 판매</button></center>
+	     <td><center><button id="item_soldout_btn">품절</button> <p><p>
+	                 <button id="item_sale_btn">재 판매</button></center>
 	     </td>
 	    </tr>
 	    <tr id="admin_page_tr2" class="text-center">
-	     <td width=><input type="checkbox" name="soldout_2"></td>
+	     <td width=><input type="checkbox" name="soldout"></td>
 	     <td width="15%" height="90px">상품사진</td>
 	     <td width="45%"  class="text-left" style="padding-left:10px">자연의 바람</td>
 	     <!-- 수정 : 클릭 시 페이지 이동
@@ -231,8 +246,7 @@ $(function(){
 	     <td><center><a href="#"><button id="insert" width="10%">수정</button></a></center></td>
 	     <td><center><button id="delete" width="10%" onclick="alert('정말 삭제하시겠습니까?')">삭제</button></center></td>
 	     <td>10개</td>
-	     <td><center><input type="checkbox" name="soldout">
-	                 <button id="item_soldout_btn">품절</button> <p><p>
+	     <td><center><button id="item_soldout_btn">품절</button> <p><p>
 	                 <button id="item_sale_btn">재 판매</button></center>
 	     </td>
 	    </tr>
