@@ -438,6 +438,7 @@ margin-top:10%;
 }
 
 .pay_totalpayleft{
+	text-align:center;
 	float:left;
 	margin-top:2%;
 	margin-bottom:2%;
@@ -445,6 +446,7 @@ margin-top:10%;
 }
 
 .pay_totalpayright{
+	text-align:center;
 	float:right;
 	margin-top:2%;
 	margin-bottom:2%;
@@ -459,6 +461,7 @@ margin-top:10%;
 }
 
 .pay_bottomright{
+	text-align:right;
 	float:right;
  	border-top:1px solid gray;
  	width:50%;
@@ -468,7 +471,6 @@ margin-top:10%;
 
 .pay_last{
 	margin-top:5%;
-	float:right;
 	font-size:20px;
 }
 

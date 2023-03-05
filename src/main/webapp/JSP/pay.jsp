@@ -196,42 +196,43 @@
 
 
 <div class="pay_totalpayleft">
-결제 예정 금액
+결제 수단
 </div>
 
 <div class="pay_totalpayright">
-결제 수단
+결제 예정 금액
 </div>
 
 
 <div class="pay_bottomleft">
-  <div class="1">총 주문 금액<p>
-  26000원
-  </div>
-  
-  <div class="2">
-  총 할인<p>
-  -3000원
-  </div>
-  
-  <div class="3">
-  총 결제예정 금액<p>
-  =23000원
-  </div>
+<input type="radio">카드 결제&nbsp;|&nbsp;
+  <input type="radio">휴대폰 결제&nbsp;|&nbsp;
+  <input type="radio">무통장 입금&nbsp;| &nbsp;
+  <input type="radio">삼성 페이<p>
  
 </div>
 
 <div class="pay_bottomright">
  <div>
-  <input type="radio">카드 결제&nbsp;|&nbsp;
-  <input type="radio">휴대폰 결제&nbsp;|&nbsp;
-  <input type="radio">무통장 입금&nbsp;| &nbsp;
-  <input type="radio">삼성 페이<p>
-</div>
+  <div>총 주문 금액<p>
+  26000원
+  </div>
+  
+  <div>
+  총 할인<p>
+  -3000원
+  </div>
+  
+  <div>
+  총 결제예정 금액<p>
+  =23000원<p>
+  ================================
+  </div>
   <div class="pay_last">
- 결제 총 금액<p>
+ 총 결제 금액<p>
  23000원<p>
  <button>결제하기</button>
+</div>
 </div>
  </div>
 </div>
