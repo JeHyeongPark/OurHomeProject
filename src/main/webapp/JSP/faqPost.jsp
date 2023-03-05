@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div id="faqPost_leftbar">
+<div id="leftbar">
   <div class=""><a href="#">쇼핑몰</a></div>
 </div>  
 
@@ -98,8 +98,8 @@
 
 
 <!-- footer구역 -->
-	<footer class="faqPost_footer">
-		<div class="faqPost_footerdiv" >
+	<footer class="footer">
+		<div class="footerdiv" >
 			상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구<p>
 				사업자번호 xxx-xx-xxxxx<p>
  				이메일 | 교환,반품 주소지<p>			
@@ -117,6 +117,5 @@
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
 	<script src="../js/bootstrap.min.js"></script>
- </div>	
 </body>
 </html>

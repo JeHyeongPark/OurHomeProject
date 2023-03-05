@@ -10,7 +10,7 @@ body{
     font-family:'S-CoreDream-3Light';
 }
 
-#faqPost_leftbar{
+#leftbar{
 	width:310px;
 	position:fixed;
 	padding:30px;
@@ -20,42 +20,20 @@ body{
 }
 
 
-#eventPost_leftbar{
-	width:310px;
-	position:fixed;
-	padding:30px;
-	box-sizing:border-box;
-	background-color:beige;
-	height:100%;
-}
-
-#findPost_leftbar{
-	width:310px;
-	position:fixed;
-	padding:30px;
-	box-sizing:border-box;
-	background-color:beige;
-	height:100%;
+.footer {
+    bottom: 0;	
+    padding-top:3%;
 }
 
 
-#cancelPost_leftbar{
-	width:310px;
-	position:fixed;
-	padding:30px;
-	box-sizing:border-box;
-	background-color:beige;
-	height:100%;
+.footerdiv {		
+	background-color: #f4efe1;
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+	padding-left:10%;
 }
 
-#postView_leftbar{
-	width:310px;
-	position:fixed;
-	padding:30px;
-	box-sizing:border-box;
-	background-color:beige;
-	height:100%;
-}
 
 
 
@@ -112,74 +90,6 @@ body{
 }
 
 
-/* .footer {
-	background-color: #f4efe1;
-	text-align:center;
-	margin-left:310px;
-	
-} */
-
-.faqPost_footer {
-    bottom: 0;	
-    padding-top:3%;
-}
-
-.eventPost_footer {
-    bottom: 0;	
-    padding-top:3%;
-}
-
-.findPost_footer {
-    bottom: 0;	
-    padding-top:3%;
-}
-
-.cancelPost_footer {
-    bottom: 0;	
-    padding-top:3%;
-}
-
-
-.postView_footer {
-    bottom: 0;	
-    padding-top:3%;
-}
-
-.faqPost_footerdiv {		
-	background-color: #f4efe1;
-	text-align:center;
-	width:100%;
-	margin: 0 auto; 
-}
-
-.eventPost_footerdiv {		
-	background-color: #f4efe1;
-	text-align:center;
-	width:100%;
-	margin: 0 auto; 
-}
-
-.findPost_footerdiv {		
-	background-color: #f4efe1;
-	text-align:center;
-	width:100%;
-	margin: 0 auto; 
-}
-
-
-.cancelPost_footerdiv {		
-	background-color: #f4efe1;
-	text-align:center;
-	width:100%;
-	margin: 0 auto; 
-}
-
-.postView_footerdiv {		
-	background-color: #f4efe1;
-	text-align:center;
-	width:100%;
-	margin: 0 auto; 
-}
 
 
 .faqPost_paging{
@@ -309,3 +219,257 @@ margin-bottom:5%
 .postView_movetablearea{
 margin-top:10%;
 }
+
+
+
+#myPage_contents{
+	padding:4% 5% 30% 5%;
+	margin-left:310px;
+}
+
+
+.myPage_main{
+	border: 1px solid gray;
+	padding-top: 1%;
+	width:30%;
+	float:left;
+}
+
+.myPage_main li{
+	list-style:none;
+}
+
+.myPage_check{	
+	width:65%;
+	float:right;
+	padding-left:3%;
+	padding-bottom:2%;
+}
+
+.myPage_check a{
+	text-decoration: none;
+	color:black;
+}
+
+
+.myPage_order{
+ 	border:1px solid gray;
+ 	margin-bottom:3%;
+ 	padding-left:3%;
+ 	padding-bottom:1%;
+}
+
+.myPage_profile{
+ 	border:1px solid gray;
+ 	margin-bottom:3%;
+  	padding-left:3%;
+ 	padding-bottom:1%;
+}
+
+.myPage_cart{
+ 	border:1px solid gray;
+ 	margin-bottom:3%;
+  	padding-left:3%;
+ 	padding-bottom:1%;
+}
+
+.myPage_wishlist{
+ 	border:1px solid gray;
+ 	margin-bottom:3%;
+  	padding-left:3%;
+ 	padding-bottom:1%;
+}
+
+.myPage_point{
+ 	border:1px solid gray;
+ 	margin-bottom:3%;
+  	padding-left:3%;
+ 	padding-bottom:1%;
+}
+
+.myPage_post{
+ 	border:1px solid gray;
+  	padding-left:3%;
+ 	padding-bottom:1%;
+}
+
+
+.myPage_main_won{
+	float:right;
+}
+
+.myPage_pointarea{
+  	padding-right:10%;
+}
+
+
+#pay_contents{
+	padding:4% 5% 30% 5%;
+	margin-left:310px;
+}
+
+.pay_ordertable{
+	width:100%;
+}
+
+
+
+
+.pay_ordertalbehead{
+	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_ordertalbebody{
+	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_ordertalbefoot{
+	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+
+
+
+
+.pay_right{
+	float:right;
+}
+
+.pay_delete{
+	margin-top:2%;
+}
+
+.pay_prev{
+	float:right;
+}
+
+.pay_tobody{
+	margin-top:7%;
+}
+
+
+.pay_bodytable{
+	margin-top:2%;
+	width:100%;
+}
+
+.pay_bodytable0{
+	width:100%;
+}
+
+
+.pay_bodytable1{
+  	border:1px solid gray;
+  	border-top:0;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_bodytable2{
+  	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_bodytable3{
+  	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_bodytable4{
+  	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_bodytable5{
+  	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_bodytable6{
+  	border:1px solid gray;
+	border-left:0;
+	border-right:0;
+}
+
+.pay_bodytable1area{
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+
+.pay_bodytable2area{
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+
+.pay_bodytable3area{
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;	
+}
+
+.pay_bodytable4area{
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;	
+}
+
+.pay_bodytable5area{
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;	
+}
+
+.pay_bodytable6area{
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;	
+}
+
+.pay_totalpayleft{
+	float:left;
+	margin-top:2%;
+	margin-bottom:2%;
+	width:50%;
+}
+
+.pay_totalpayright{
+	float:right;
+	margin-top:2%;
+	margin-bottom:2%;
+	width:50%;
+}
+
+.pay_bottomleft{
+ 	float:left;
+ 	border-top:1px solid gray;
+ 	width:50%;
+ 	padding-top:3%;
+}
+
+.pay_bottomright{
+	float:right;
+ 	border-top:1px solid gray;
+ 	width:50%;
+ 	padding-top:3%;
+ 	padding-left:13%;
+}
+
+.pay_last{
+	margin-top:5%;
+	float:right;
+	font-size:20px;
+}
+
+
