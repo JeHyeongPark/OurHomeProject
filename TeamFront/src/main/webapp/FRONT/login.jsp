@@ -18,7 +18,7 @@
 	background-size:16px;
 	background-repeat:no-repeat;
 }     
-#log_pwd input{
+#log_pwd input{ 
 	background-image:url("./icon/pwd.png");
 	background-position: 1px center;
 	background-size:16px;

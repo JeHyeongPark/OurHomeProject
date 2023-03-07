@@ -108,7 +108,7 @@ $(function(){
   </div><!-- main -->
  </div>	 <!-- content -->
   
-  <!-- footer -->
+  <!-- footer --> 
   <footer >
       <div class="footer" ><!--   -->
          상호명 | 대표자 | 전화번호 | 주소 서울특별시 강남구<p>

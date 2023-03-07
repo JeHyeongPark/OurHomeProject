@@ -23,7 +23,7 @@ $(function(){
 	  //안쪽의 $(this):클릭한 tab의 a태그  ex)tab2
 	  $($(this).attr("href")).show(); //$('#tab2').show() : id가 tab2인 태그
   })
-})
+}) 
  
 <!-- 탭 클릭 시 스크롤 자동 이동을 방지-->
 $(function(){

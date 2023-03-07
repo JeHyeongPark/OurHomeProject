@@ -17,7 +17,7 @@ function update(){
 	alert ('회원정보 수정이 완료되었습니다.');
 	 window.location.href = "login.jsp";
 }     
-
+ 
 //회원 탈퇴하기 클릭 시
 function delpop(){
 	var url="delcheck.html"
