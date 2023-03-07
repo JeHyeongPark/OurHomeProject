@@ -72,6 +72,7 @@ html, body {
    color:rgb(68, 68, 68);
   }		
 
+
 /*id_find*/
 #id_find_img{
 	float:left;
@@ -208,26 +209,27 @@ html, body {
 #mem_agree{
 	margin-top:30px;
 }
-#agree{
+
+#agree_btn{
 	float:left;
-	margin-top:20px;
-	margin-left:500px
+	margin-top:40px;
+	margin-left:10px
 }
-#disagree{
-	float:right;
-	margin-top:20px;
-	margin-right:50px
+#disagree_btn{
+	float:left;
+	margin-top:40px;
+	margin-left:20px
 }
 
 #join_end_btn{
 	float:left;
 	margin-top:40px;
-	margin-left:140px;
+	margin-left:0px;
 }
 #join_close_btn{
 	float:left;
 	margin-top:40px;
-	margin-left:170px
+	margin-left:0px
 }
 
 /*join_pop*/
