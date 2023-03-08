@@ -22,7 +22,7 @@ $(function(){
 	  $("div.panel div").hide(); //선택한 탭의 내용빼고 나머지 모든 탭의 내용은 숨김
 	  //안쪽의 $(this):클릭한 tab의 a태그  ex)tab2
 	  $($(this).attr("href")).show(); //$('#tab2').show() : id가 tab2인 태그
-  })
+  }) 
 }) 
  
 <!-- 탭 클릭 시 스크롤 자동 이동을 방지-->

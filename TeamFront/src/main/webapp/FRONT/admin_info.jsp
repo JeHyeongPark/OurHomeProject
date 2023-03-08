@@ -19,7 +19,7 @@ $(function(){
 	  if($(this).val()=='1'){
 		 $('#email2').val('');
 	     $('#email2').attr("disabled",false); //#email2 활성화
-	  }else{
+	  }else{ 
 		 $('#email2').val($(this).text()); //선택값 입력
 		 $('#email2').attr("disabled",true); //#email2 비활성화
 	  }

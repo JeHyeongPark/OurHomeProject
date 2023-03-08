@@ -17,7 +17,7 @@
 $(function(){
   $('#email_sel').change(function(){
 	$("#email_sel option:selected").each(function(){
-	  if($(this).val()=='1'){ 
+	  if($(this).val()=='1'){  
 		 $('#email2').val('');
 	     $('#email2').attr("disabled",false); //#email2 활성화
 	  }else{
