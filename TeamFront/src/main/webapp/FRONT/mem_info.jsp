@@ -42,7 +42,7 @@ $(function(){
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">
     <div class="top">
-      <img src="./icon/mem_join.png" id="mem_info_img" width="50px">
+      <img src="/Zspace/icon/mem_join.png" id="mem_info_img" width="50px">
       <div id="mem_info"><font size="4"><b>회원정보</b></font><br>
            회원정보 수정이 가능합니다.<p>
       </div>
@@ -118,7 +118,7 @@ $(function(){
       </div>
    </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="/Zspace/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -41,7 +41,7 @@ table td{
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">
     <div class="top">
-      <img src="./icon/mem_join.png" id="admin_info_img" width="50px">
+      <img src="/Zspace/icon/mem_join.png" id="admin_info_img" width="50px">
       <div id="admin_info"><font size="4"><b>회원정보 관리</b></font><br>
            비밀번호 초기화 및 회원 탈퇴 처리가 가능합니다.<p>
       </div>
@@ -111,7 +111,7 @@ table td{
       </div>
    </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="/Zspace/js/bootstrap.min.js"></script>
 
 </body>
 </html>

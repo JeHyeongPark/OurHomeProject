@@ -52,7 +52,7 @@ $(function(){
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">
     <div class="top">
-      <img src="./icon/mem_join.png" id="mem_join_img" width="50px">
+      <img src="/Zspace/icon/mem_join.png" id="mem_join_img" width="50px">
       <div id="mem_join"><font size="4"><b>회원가입</b></font><br>
         내용을 입력해주세요.<p>        
       </div>
@@ -131,7 +131,7 @@ $(function(){
 	 ④ 회사: 서비스의 제공자
 	
 		
-	 <b>제 2 장 서비스 이용계약</b>
+	 제 2 장 서비스 이용계약
 	
 	 제 3 조 (이용계약의 성립)
 	 ① 서비스 가입 신청시 본 약관을 읽고 "동의함" 버튼을 누르면 이 약관에 동의하는 것으로 간주됩니다. 
@@ -142,7 +142,7 @@ $(function(){
 	 회원은 이용신청시 기재한 사항이 변경되었을 경우에는 온라인으로 수정을 해야 하고 미변경으로 인하여 발생되는 문제의 책임은 회원에게 있습니다.
 	
 	
-	<b>제 3 장  서비스의 이용</b>
+	제 3 장  서비스의 이용
 	
 	 제 5조 (정보의 제공)
 	 회사는 회원이 서비스 이용 중 필요가 있다고 인정되는 다양한 정보를 공지사항이나 전자우편, SMS 등의 방법으로 회원에게 제공할 수 있습니다.  
@@ -162,7 +162,7 @@ $(function(){
 	 회원은 회사에서 권한 있는 사원이 서명한 명시적인 서면에 구체적으로 허용한 경우를 제외하고는 서비스를 이용하여 상품을 판매하는 영업활동을 할 수 없으며 특히 해킹, 돈벌이 광고, 음란사이트를 통한 상업행위, 상용S/W 및 저작권 자료의 불법배포 등을 할 수 없습니다. 이를 어기고 발생한 영업활동의 결과 및 손실, 관계기관에 의한 구속 등 법적 조치등에 관해서는 회사가 책임을 지지 않습니다. 
 	
 	
-	<b>제 4 장 계약해지 및 이용제한</b>
+	제 4 장 계약해지 및 이용제한
 	
 	 제 10 조 (계약해지 및 이용제한)
 	 ① 회원이 이용계약을 해지하고자 하는 때에는 회원 본인이 온라인, 우편, 방문 및 전화를 통해 회사에 해지 신청을 하여야 합니다. 
@@ -185,7 +185,7 @@ $(function(){
 	 거. 본 약관 제9조 또는 제10조를 위반한 경우
 	 너. 기타 서비스 이용계약상의 의무를 위반한 경우
 	 
-	<b>제 5 장  손해배상</b>
+	제 5 장  손해배상
 	
 	 제11조 (손해배상의 범위)
 	 ① 회사가 제공하는 서비스중 무료 서비스의 경우에는 손해배상에 해당되지 않습니다.
@@ -212,10 +212,10 @@ $(function(){
  	  <input type="button" value="동의하지 않습니다." id="disagree_btn" onclick="history.back()">
  	 </div> <!-- 이용약관 -->  
     </div><!-- middle -->   	
-
+	<hr>
      <div id="btn">
        <button id="join_end_btn" onclick="joinpop()">회원가입</button>
-       <a href="/TeamFront/login.do"><button id="join_close_btn">닫기</button></a>
+       <a href="login.jsp"><button id="join_close_btn">닫기</button></a>
 
      </div>
   </div> <!-- main --> 
@@ -232,7 +232,7 @@ $(function(){
 </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="/Zspace/js/bootstrap.min.js"></script>
 
 </body>
 </html>

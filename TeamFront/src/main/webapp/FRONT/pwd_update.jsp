@@ -28,7 +28,7 @@
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">  
     <div class="top">
-      <img src="./icon/find_pwd.png" id="pwd_update_img" width="45px"> 
+      <img src="/Zspace/icon/find_pwd.png" id="pwd_update_img" width="45px"> 
       <div id="pwd_upda"><font size="4"><b>비밀번호 재설정하기</b></font><br>
             영소문자 / 숫자 / 특수기호 3가지 포함 8자~16자 <p>
       </div>
@@ -71,7 +71,7 @@
    </footer>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
+   <script src="/Zspace/js/bootstrap.min.js"></script>
 
 </body>
 </html>

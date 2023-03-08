@@ -44,7 +44,7 @@ $(function(){
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">  
    <div class="top">
-     <img src="./icon/find_id.png" id="id_find_img" width="50px"> 
+     <img src="/Zspace/icon/find_id.png" id="id_find_img" width="50px"> 
      <div id="id_find"><font size="4"><b>아이디 찾기</b></font><br>
             아이디를 찾기 위한 방법을 선택해 주세요. <p>
      </div>
@@ -115,7 +115,7 @@ $(function(){
    </footer>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
+   <script src="/Zspace/js/bootstrap.min.js"></script>
 
 </body>
 </html>

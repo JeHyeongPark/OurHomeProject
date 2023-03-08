@@ -22,7 +22,7 @@ function update(){
 function delpop(){
 	var url="delcheck.html"
 	var name=""
-	var option="width=500 height=200 top=70 left=500"
+	var option="width=500 height=400 top=70 left=500"
 	window.open(url, name, option);
 	windo.opener.close();
 }

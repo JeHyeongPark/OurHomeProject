@@ -21,7 +21,7 @@
  <div id="contents"> <!-- 사이드 제외 전체구역 -->
   <div class="main">
     <div class="top">
-      <img src="./icon/find_pwd.png" id="pwd_find_img" width="45px"> 
+      <img src="/Zspace/icon/find_pwd.png" id="pwd_find_img" width="45px"> 
       <div id="pwd_find"><font size="4"><b>비밀번호 찾기</b></font><br>
            아이디를 입력해주세요. <p>
       </div>
@@ -60,6 +60,6 @@
    </footer>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
+   <script src="/Zspace/js/bootstrap.min.js"></script>
 </body>
 </html>

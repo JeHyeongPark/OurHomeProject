@@ -13,13 +13,13 @@
 <title>::로그인::</title>
 <style>
 #log_id input{
-	background-image:url("./icon/id.png");
+	background-image:url("/Zspace/icon/id.png");
 	background-position:1px center;
 	background-size:16px;
 	background-repeat:no-repeat;
 }     
 #log_pwd input{ 
-	background-image:url("./icon/pwd.png");
+	background-image:url("/Zspace/icon/pwd.png");
 	background-position: 1px center;
 	background-size:16px;
 	background-repeat:no-repeat
@@ -38,7 +38,7 @@
   	  <table id="login_tb" align="center">       
        <tr>
         <td colspan="2" align="center" height="180px">
-         <img src="./icon/login.png" width="70px" vspace="10"><p>
+         <img src="/Zspace/icon/login.png" width="70px" vspace="10"><p>
          <font size="4"><b>로그인</b></font>
         </td>
        </tr>  
@@ -57,9 +57,9 @@
        </tr>
        <tr id="find" >
         <td colspan="2" align="center" height="50px">
-         <a id="login_a" href="/TeamFront/id_find.do">아이디 찾기</a>&nbsp;&nbsp;|&nbsp;
-         <a id="login_a" href="/TeamFront/pwd_find.do">비밀번호 찾기</a>&nbsp;&nbsp;|&nbsp;
-         <a id="login_a" href="/TeamFront/mem_join.do">회원가입 </a>
+         <a id="login_a" href="id_find.jsp">아이디 찾기</a>&nbsp;&nbsp;|&nbsp;
+         <a id="login_a" href="pwd_find.jsp">비밀번호 찾기</a>&nbsp;&nbsp;|&nbsp;
+         <a id="login_a" href="mem_join.jsp">회원가입 </a>
         <td>
        </tr>
    	  </table>
@@ -77,7 +77,7 @@
    </footer>
      
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
+   <script src="/Zspace/js/bootstrap.min.js"></script>
 
 </body>
 </html>
