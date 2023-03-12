@@ -16,29 +16,26 @@ html, body {
 #leftbar{
 	width:310px;
 	position:fixed;
-	left:0; 
-	top:0;  
 	padding:30px;
 	box-sizing:border-box;
-	z-index:98;
-	letter-spacing:0.5px;
 	background-color:beige;
 	height:100%;
 }
+
 #contents{
-   padding:0% 5% 15% 5%;
+   padding:0% 5% 0% 5%;
    margin-left:310px;
 }
-.footer {      
-   bottom: 0;
-   padding-top:3%;
-   background-color: #f4efe1;
-   text-align:center;
-   width:100%;
-   margin-top:auto;
-   /*padding-left:310px;
-   position: absolute;
-   */
+.footer {
+    bottom: 0;	
+    padding-top:3%;
+}
+
+.footerdiv {		
+	text-align:center;
+	width:100%;
+	margin: 0 auto; 
+	padding-left:10%;
 }
     
 /*login*/
