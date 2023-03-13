@@ -25,7 +25,7 @@
 
   <div id="leftbar"> <!-- 전체 사이드바 구역 -->
 	<div class="logo"> <!-- 로고 -->
-	  <a href="/Zspace/mainpage/MainPage.jsp"><img src="C:\Users\asuj9\Desktop\project\rogo.png"></a>
+	  <a href="/Zspace/mainpage/MainPage.jsp"><img src="/Zspace/icon/rogo.png"></a>
 	</div> <!-- 로고 -->
 	<div class="menu_wrap"> <!-- 사이드 바 내용 -->
 	  <table class="menu_group"> <!-- 로그인, 마이페이지 -->

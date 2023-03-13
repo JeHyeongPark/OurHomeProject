@@ -9,10 +9,7 @@
 body{
  	font-family:'S-CoreDream-3Light';
 }   
-  
-html, body {
-    height: 100%
-}
+
 #leftbar{
 	width:310px;
 	position:fixed;
@@ -24,7 +21,7 @@ html, body {
 
 #contents{
    padding:0% 5% 0% 5%;
-   margin-left:310px;
+   margin-left:310px
 }
 .footer {
     bottom: 0;	
@@ -47,7 +44,7 @@ html, body {
 }
 
 #logfm{
-	margin-top:130px;	
+	margin-top:100px;	
 }
 
 #mem_id, 
